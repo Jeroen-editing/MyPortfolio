@@ -1,0 +1,1261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeroen De Vos - portfolio</title>
+
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/portfolio2.png">
+    <link rel="stylesheet" href="css/indexStylesheet.css">
+    <!--<link rel="stylesheet" href="css/responsiveness.css">-->
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Cream+Soda&family=Dosis:wght@200;300;400;500;600;700;800&family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=KoHo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Macondo&family=Port+Lligat+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Cream+Soda&family=Dosis:wght@200;300;400;500;600;700;800&family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=KoHo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Macondo&family=Mitr:wght@200;300;400;500;600;700&family=Port+Lligat+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!------NAV----------------------------------------------------------->
+<nav class="navbar">
+    <div class="dropdownBackground">
+        <div class="droparrow"></div>
+    </div>
+    <div class="selectdrop">
+        <a href="mailto:jdv.editing@gmail.com?subject=Saw your portfolio." class="nav_link gmail drop">
+            <img src="assets/icons/gmail.png" class="gmail_icon" alt="gmail logo">
+            <p>contact me</p>
+            <div class="dropdown">
+                <p class="check_out mail_me">
+                    If you are interested in my work
+                    <br>or have questions:
+                    <span> just mail me!</span>
+                </p>
+            </div>
+        </a>
+        <a href="" class="nav_link codecamp drop">
+            <img src="assets/icons/fire_black.png" class="freeCodeCamp_icon" alt="freeCodeCamp logo">
+            <p>freeCodeCamp</p>
+            <div class="dropdown">
+                <p class="check_out">
+                    Nice exercises and projects.
+                    <br>For repetition or learnng JS, React, ...
+                    <br><span>Check my local portfolio page.</span>
+                </p>
+            </div>
+        </a>
+        <a href="https://github.com/Jeroen-editing" class="nav_link github drop">
+            <img src="assets/icons/github_black.png" class="github_icon" alt="github logo">
+            <p>github</p>
+            <div class="dropdown">
+                <p class="check_out">
+                    Where all the code is stored.
+                    <br><span>Check my code.</span>
+                </p>
+            </div>
+        </a>
+        <a href="https://www.linkedin.com/in/jeroen-de-vos-39258718b/" class="nav_link linkedin drop">
+            <img src="assets/icons/linkedin.png" alt="LinkedIn logo">
+            <p>LinkedIn</p>
+            <div class="dropdown">
+                <p class="check_out">
+                    Where you can contact me to
+                    <br>if you don't like to mail me personaly.
+                    <br><span>Check my linkedIn page.</span>
+                </p>
+            </div>
+        </a>
+        <a href="#" class="nav_link facebook drop">
+            <img src="assets/icons/facebook.png" alt="facebook logo">
+            <p>LinkedIn</p>
+            <div class="dropdown flex_drop">
+                <h3 class="warning">Warning!</h3>
+                <p class="check_out check_fb">
+                    Facebook might <span>NOT</span> be a social network.
+                    <br>Probably they are gathering your peronal
+                    <br>information, to <span>sell it</span> to highest bidder or
+                    <br>advertising companies.
+                    <br>If there main goal is making profit, they
+                    <br>are not that intersted in your well being!
+                </p>
+            </div>
+        </a>
+        <div class="nav_link drop" id="twit">
+            <img src="assets/icons/twitter.png" alt="home logo">
+            <p>a twitter</p>
+            <audio src="assets/sound/501000__carloscav__bird-pajaro-1.ogg"  class="twitter_audio" id="bird"></audio>
+            <div class="dropdown">
+                <p class="check_out">
+                    Share a tweet with the world.
+                </p>
+            </div>
+        </div>
+    </div>
+</nav>
+<!------MAIN---------------------------------------------------------->
+<section class="container">
+    <!------L-ASIDE-------------------------------------------->
+    <aside class="left_aside">
+        <div class="btns_box btn_hidden" id="infoCloseBtn">
+            <button class="left_close_btn" id="infoCloseBtnOne">
+                <h2 class="btn_text">close</h2>
+                <img class="btn_arrow" src="assets/icons/left_arrow2_green.png" id="topArrowLeft">
+                <h2 class="btn_text">page</h2>
+            </button>
+            <button class="left_close_btn" id="infoCloseBtnTwo">
+                <h2 class="btn_text">close</h2>
+                <img class="btn_arrow" src="assets/icons/left_arrow2_green.png" id="botArrowLeft">
+                <h2 class="btn_text">page</h2>
+            </button>
+        </div>
+    </aside>
+    <!------L-SLIDE-IN----------------------------------------->
+    <aside class="left_slide" id="leftSlideIn">
+    <!------ Info Title --------------------->
+        <header class="info_header" id="infoTitle">
+            <div class="title_flex">
+                <section class="title_section">
+                    <div class="name_box">
+                        <h1 class="name">Jeroen De Vos</h1>
+                    </div>
+                    <div class="image_box">
+                        <img class="coding_icon" src="assets/icons/coding_green.png" alt="">
+                    </div>
+                    <div class="info_page_box">
+                        <h2 class="pageTitle">Portfolio > Info Page</h2>
+                    </div>
+                </section>
+                <a class="new_window_link" href="infopage.html" id="info_window_link">
+                    <div class="new_window_box" id="infoNewWindow">
+                        <img class="window_icon info_icon" src="assets/icons/window_green.png" alt="">
+                    </div>
+                    <div class="window_tooltip">
+                        <div class="droparrow"></div>
+                        <p class="tooltip_text">open info page<br>in new window</p>
+                    </div>
+                </a>
+            </div>
+        </header>
+        <!------ Info section --------------------->
+        <section class="personal_section" id="personal">                
+            <!------ ABOUT ME --------------------------------------------------->
+            <article class="info_box" id="aboutInfoBox">
+                <header class="title_box title_hover" id="openAbout">
+                    <h3 class="info_title">About me ...</h3>
+                </header>
+                <section class="info_text" id="aboutBox">
+                    <article class="info_article about_article">
+                    <!------ About TEXT --------------------------------------------------->
+                        <section class="article_text">
+                            <div class="text_box">
+                                <p class="part_text">
+                                    Sometimes it's a good thing when you have to reevaluate or change things in life. 
+                                    It can show you new exciting options you didn't thought about before. I wanted to use this opportunity
+                                    to find something that could improve my work situation, but also challenge me in the years to come. So I 
+                                    knew it would not be the most easy way and that I would had to study hard for it.
+                                </p>
+                                <p class="part_text">
+                                    What got my interest straight away, were some online courses with basic HTML and CSS. 
+                                    So I started doing them while I was still cheking all my possibilities. But after a few lessons
+                                    I already knew this was it. And that I really wanted to do more with it.
+                                    <br>
+                                    Not realizing yet, but maybe feeling already, it would become a passion.
+                                </p>
+                            </div>
+                        </section>
+                    <!------ About QUOTES ----------------------------------------------->
+                        <section class="article_quote" id="aboutQuotes">
+                            <aside class="quote_left">
+                                <div class="quote_cartoon">
+                                    <img class="cartoon" src="assets/photos/internetOfThings2.jpg" alt="">
+                                </div>
+                            </aside>
+                            <section class="quote_middle">
+                                <h3 class="quote_title">Programmer</h3>
+                                <h5 class="quote_subtitle">proh &#183; gram &#183; mer (n)</h5>
+                                <p class="quote_text">
+                                    An organism capable of converting caffeine and pizza into code.
+                                </p>
+                            </section>
+                            <aside class="quote_right">
+                                <div class="quote_cartoon">
+                                    <img class="cartoon" src="assets/photos/codeIsFragile.png" alt="">
+                                </div>
+                            </aside>
+                        </section>
+                    </article>
+                </section>        
+            </article>
+                    
+            <div class="open_space"></div>
+            <!------ EDUCATION -------------------------------------------------->
+            <article class="info_box"  id="educationInfoBox">
+                <header class="title_box" id="openEducations">
+                    <h3 class="info_title">Education.</h3>
+                </header>
+                <section class="info_text" id="educationsBox">
+                <!-- Education - 1 ************************************* -->
+                    <article class="info_article education_article">
+                        <header class="subtitle_box subtitle_hover" id="showWebBtn">
+                            <h4 class="sub_title">Web development</h4>
+                            <img class="arrow" id="webArrow" src="assets/icons/arrow_down_1b.png" alt="arrow down">
+                        </header>
+                    <!-- Webdeveloper ************************************* -->
+                        <section class="article_text text_hidden" id="web">
+                            <div class="text_box top_box">
+                                <header class="shool_header">
+                                    <div class="shool_title_box">
+                                        <h4 class="shool_title">Becode - Antwerp</h4>
+                                        <h5 class="shool_sub_title">Html, CSS (& Sass), JavaScript, PHP, Apache, SQL, MySql, Symfony,...</h5>
+                                    </div>
+                                    <a class="site_link" href=""><p>go to there site</p></a>
+                                </header>
+                                <section class="shool_info">
+                                    <p class="part_text">
+                                        An intensive practical course, that mainly focuses on self-education. Offering exercices and (group) projects 
+                                        that lead you from simple HTML to advanced PHP. Learning you also to work with Linux command lines and to 
+                                        manage local servers and datbases.
+                                    </p>
+                                </section>
+                            </div>
+                            <div class="text_box bot_box">
+                                <header class="shool_header">
+                                    <div class="shool_title_box">
+                                        <h4 class="shool_title">ENCORA - Berchem (Antwerp)</h4>
+                                        <h5 class="shool_sub_title">JavaScript, PHP, SQL, MySql, Smarty, CSS & JavaScript animations.</h5>
+                                    </div>
+                                    <a class="site_link" href=""><p>go to there site</p></a>
+                                </header>
+                                <section class="shool_info">
+                                    <p class="part_text">
+                                        Evening classes. In the first year they start with basic JavaScript, PHP and SQL. Teaching you to build a membership 
+                                        application with a database, loginpage, password- and exception handeling, input, output,... 
+                                        <br>And in the second year, they teach how to make JavaScript animations and games.
+                                    </p>
+                                </section>
+                            </div>
+                        </section>
+                        <!-- Hide School ************************************* -->
+                        <section class="hide_btn btn_hidden" id="hideWebBtn">
+                            <img class="arrow" id="webHideArrow" src="assets/icons/arrow_up_1b.png" alt="arrow up">
+                            <h4 class="hide_title">hide</h4>
+                        </section>
+                    </article>
+                <!-- Programming ************************************* -->
+                    <article class="info_article spec_margin">
+                        <header class="subtitle_box subtitle_hover" id="showScienceBtn">
+                            <h4 class="sub_title select">Computer science</h4>
+                            <img class="arrow" id="scienceArrow" src="assets/icons/arrow_down_1b.png" alt="arrow down">
+                        </header>
+                        <section class="article_text text_hidden" id="science">
+                            <div class="text_box top_box">
+                                <header class="shool_header">
+                                    <div class="shool_title_box">
+                                        <h4 class="shool_title">VDAB online courses</h4>
+                                        <h5 class="shool_sub_title">Data analytics</h5>
+                                    </div>
+                                    <a class="site_link" href=""><p>go to there site</p></a>
+                                </header>
+                                <p class="part_text">
+                                    What data, do you really need and what data is not important (for a program).
+                                    <br>To much data can be distractive and you need to see the essential tasks & data first.
+                                </p>
+                            </div>
+                            <div class="text_box bot_box">
+                                <header class="shool_header">
+                                    <div class="shool_title_box">
+                                        <h4 class="shool_title">VDAB online courses</h4>
+                                        <h5 class="shool_sub_title">Programming logics</h5>
+                                    </div>
+                                    <a class="site_link" href=""><p>go to there site</p></a>
+                                </header>
+                                <p class="part_text">
+                                    Learnig to work with the basic programming structures.
+                                    <br>Operators, statements, loops,.. 
+                                </p>
+                            </div>
+                        </section>
+                        <!-- Hide School ************************************* -->
+                        <section class="hide_btn btn_hidden" id="hideScienceBtn">
+                            <img class="arrow" id="scienceHideArrow" src="assets/icons/arrow_up_1b.png" alt="arrow up">
+                            <h4 class="hide_title">hide</h4>
+                        </section>
+                    </article>
+                <!-- Film-art ************************************* -->
+                    <article class="info_article spec_margin">
+                        <header class="subtitle_box subtitle_hover" id="showFilmBtn">
+                            <h4 class="sub_title">Film and video-art</h4>
+                            <img class="arrow" id="filmArrow" src="assets/icons/arrow_down_1b.png" alt="arrow down">
+                        </header>
+                        <section class="article_text text_hidden" id="film">
+                            <div class="text_box">
+                                <header class="shool_header">
+                                    <div class="shool_title_box">
+                                        <h4 class="shool_title">Royal Academy of Fine Arts - Antwerp.</h4>
+                                        <h5 class="shool_sub_title">Video- and soundediting, camera- and light technics, special-effects and film history.</h5>
+                                    </div>
+                                    <a class="site_link" href=""><p>go to there site</p></a>
+                                </header>
+                                <p class="part_text">
+                                    Each year is divided in 50% theory and 50% practics, with 2 or 3 projects a year.
+                                    <br>Normaly you choose your main interest after the 3th year. But because I had experience in the field, I could focus from 
+                                    the first year on post-production (editing, graphics, special-effects,...).
+                                </p>
+                            </div>
+                        </section>
+                        <!-- Hide School ************************************* -->
+                        <section class="hide_btn btn_hidden" id="hideFilmBtn">
+                            <img class="arrow" id="filmHideArrow" src="assets/icons/arrow_up_1b.png" alt="arrow up">
+                            <h4 class="hide_title">hide</h4>
+                        </section>
+                    </article>
+                <!-- AutoCAD ************************************* -->
+                    <article class="info_article spec_margin">
+                        <header class="subtitle_box subtitle_hover" id="showCadBtn">
+                            <h4 class="sub_title">AutoCAD</h4>
+                            <img class="arrow" id="cadArrow" src="assets/icons/arrow_down_1b.png" alt="arrow down">
+                        </header>
+                        <section class="article_text text_hidden" id="cad">       
+                            <div class="text_box">
+                                <header class="shool_header">
+                                    <div class="shool_title_box">
+                                        <h4 class="shool_title">VDAB - Online course</h4>
+                                        <h5 class="shool_sub_title">2D Building designs</h5>
+                                    </div>
+                                    <a class="site_link" href=""><p>go to there site</p></a>
+                                </header>
+                                <p class="part_text">
+                                    Just to see if I still knew the basics, after I used it in high-shool.
+                                </p>
+                                <p class="part_text">
+                                    I always been fascinated with design and editing programs. If you learn AutoCAD as a hobby, 
+                                    it could mean you need to go out more? Luckely biking is also one of my hobbies 😉
+                                </p>
+                            </div>
+                        </section>
+                        <!-- Hide School ************************************* -->
+                        <section class="hide_btn btn_hidden" id="hideCadBtn">
+                            <img class="arrow" id="cadHideArrow" src="assets/icons/arrow_up_1b.png" alt="arrow up">
+                            <h4 class="hide_title">hide</h4>
+                        </section>
+                    </article>
+                <!-- Architecture ************************************* -->
+                    <article class="info_article">
+                        <header class="subtitle_box subtitle_hover" id="showArchitectBtn">
+                            <h4 class="sub_title">Architecture - Graphic art & design</h4>
+                            <img class="arrow" id="architectArrow" src="assets/icons/arrow_down_1b.png" alt="arrow down">
+                        </header>
+                        <section class="article_text text_hidden" id="architect">       
+                            <div class="text_box">
+                                <header class="shool_header">
+                                    <div class="shool_title_box">
+                                        <h4 class="shool_title">Secondary Art School - Antwerp</h4>
+                                        <h5 class="shool_sub_title">Preparatory education for architecture or graphic arts.</h5>
+                                    </div>
+                                    <a class="site_link" href=""><p>go to there site</p></a>
+                                </header>
+                                <p class="part_text">
+                                    In the last years of highshool I made the choice to switch from science and economics to art and architecture.
+                                    To do something with my creativity and still gain enough general knowledge (in math, chemestry, physics, etc.).
+                                    So I could still go in any direction I wanted.
+                                    <br>
+                                    At that young age, I found out that I enjoy learning, but that I often get more satisfacion from a 'creative' proces.
+                                </p>
+                            </div>
+                        </section>
+                        <!-- Hide School ************************************* -->
+                        <section class="hide_btn btn_hidden" id="hideArchitectBtn">
+                            <img class="arrow" id="architectHideArrow" src="assets/icons/arrow_up_1b.png" alt="arrow up">
+                            <h4 class="hide_title">hide</h4>
+                        </section>
+                    </article>
+                </section>
+            </article>
+                    
+            <div class="open_space"></div>
+            <!------ SKILLS ----------------------------------------------------->
+            <article class="info_box" id="skillsInfoBox">
+                <header class="title_box" id="openSkills">
+                    <h3 class="info_title">Skills.</h3>
+                </header>
+                <section class="info_text" id="skillsBox">
+                <!-- SKILLS 1 *************************************************************** -->
+                    <article class="info_article skills_article skills_top">
+                        <!-- Skills - MENU 1 ************************************* -->
+                        <header class="skills_titles_box">
+                            <div class="title_row">
+                                <div class="title_column title_hover first_col" id="showHtmlCssBtn">
+                                    <h4 class="sub_title">HTML & CSS</h4>
+                                    <img class="arrow" id="htmlCssSkillsArrow" src="assets/icons/arrow_down_1c.png" alt="arrow down">
+                                </div>
+                                <div class="title_column title_hover spec_column" id="showSassBtn">
+                                    <h4 class="sub_title">Sass & Bootstrap</h4>
+                                    <img class="arrow" id="sassSkillsArrow" src="assets/icons/arrow_down_1c.png" alt="arrow down">
+                                </div>
+                                <div class="title_column title_hover last_col spec_column" id="showScriptBtn">
+                                    <h4 class="sub_title">JavaScript</h4>
+                                    <img class="arrow" id="scriptSkillsArrow" src="assets/icons/arrow_down_1c.png" alt="arrow down">
+                                </div>
+                            </div>
+                        </header>
+                        <!-- Skills - TEXT 1 ************************************* -->
+                        <section class="text_row row_hidden" id="htmlCss">
+                            <div class="text_box">
+                                <div class="part_icon">
+                                    <div class="icon_column">
+                                        <img src="assets/icons/html_icon.png" class="skill_icon" alt="">
+                                        <img src="assets/icons/css_icon.png" class="skill_icon" alt="">
+                                    </div>
+                                </div>
+                                <div class="text_column">
+                                    <p class="part_text">
+                                        Of course I should normaly talk about things like semantics here. But during my courses I noticed 
+                                        that most students wanne learn programming languages asap. And with my passion for graphics both 
+                                        are also verry nice tools to work with.
+                                    </p>
+                                    <p class="part_text">
+                                        Good HTML and CSS can be simple and even elegant, but really catch the users attention. And with each 
+                                        project I make, I try to achieve improve that. Make it compact, structured and comprehensible. And yes,
+                                        with using the correct semantics. 😉
+                                    </p>
+                                </div>
+                                
+                            </div>
+                        </section>
+                        <!-- Skills - TEXT 2 ************************************* -->
+                        <section class="text_row row_hidden" id="sass">
+                            <div class="text_box">
+                                <div class="part_icon">
+                                    <div class="icon_column">
+                                        <img src="assets/icons/bootstrap_icon.png" class="skill_icon boots_icon" alt="">
+                                        <img src="assets/icons/sass_icon.png" class="skill_icon sass_icon" alt="">
+                                    </div>
+                                </div>
+                                <div class="text_column">
+                                    <p class="part_text">
+                                        When we started using Sass in our first simple exercices, I was really convinced. Now I couldn't imagine 
+                                        not using it anymore. Not only for the extra's @mixin etc, but also just to organise and structure your 
+                                        stylesheets.
+                                    </p>
+                                    <p class="part_text">
+                                        Probably I will never be a big fan of Bootstrap, but I learned to use it of course. My presonal impression
+                                        is that those tools are making most websites look the same. You maybe don't really need a designer anymore, 
+                                        but it's also killing style and creativity. At least, that's my personal opiniion.
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- Skills - TEXT 3 ************************************* -->
+                        <section class="text_row row_hidden" id="javascript">
+                            <div class="text_box">
+                                <div class="part_icon">
+                                    <div class="icon_column">
+                                        <img src="assets/icons/javascript_icon.png" class="skill_icon" alt="">
+                                    </div>
+                                </div>
+                                <div class="text_column">
+                                    <p class="part_text">
+                                        When starting with JavaScript it was the only short moment I doubted if web-developping was really my thing.
+                                        I comprehended it (lke the best students in the group), but struggled with applying it. Luckely I just needed
+                                        an 'eye-opener' like thet say. And DOM event hanndlings were my trigger I think.
+                                    </p>
+                                    <p class="part_text">
+                                        From that moment I really started to enjoy JavaScript. Now everytime I learn something new or look something up,
+                                        I wanne add things or use it for other applications, just to test myself extra. And because we learned ES5 in the
+                                        courses, I'm also learning myself using ES6 better every project I make.
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                    </article>
+                <!-- SKILLS 2 *************************************************************** -->
+                    <article class="info_article skills_article skills_bottom">
+                        <!-- Skills - MENU 2 ************************************* -->
+                        <header class="skills_titles_box">
+                            <div class="title_row">
+                                <div class="title_column title_hover first_col" id="showFrameworksBtn">
+                                    <h4 class="sub_title">Frameworks</h4>
+                                    <img class="arrow" id="frameworksSkillsArrow" src="assets/icons/arrow_down_1c.png" alt="arrow down">
+                                </div>
+                                <div class="title_column title_hover spec_column" id="showDatabasesBtn">
+                                    <h4 class="sub_title">PHP, SQL, Databases</h4>
+                                    <img class="arrow" id="databasesSkillsArrow" src="assets/icons/arrow_down_1c.png" alt="arrow down">
+                                </div>
+                                <div class="title_column title_hover last_col spec_column" id="showDesignBtn">
+                                    <h4 class="sub_title">Web design & Editing</h4>
+                                    <img class="arrow" id="designSkillsArrow" src="assets/icons/arrow_down_1c.png" alt="arrow down">
+                                </div>
+                            </div>
+                        </header>
+                        <!-- Skills - TEXT 4 ************************************* -->
+                        <section class="text_row row_hidden" id="frameworks">
+                            <div class="text_box">
+                                <div class="part_icon">
+                                    <div class="icon_column">
+                                        <img src="assets/icons/vue_icon.png" class="skill_icon vue_icon" alt="">
+                                        <img src="assets/icons/react_icon.png" class="skill_icon react_icon" alt="">
+                                    </div>
+                                </div>    
+                                <p class="part_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Sint sequi velit quo odio dolore vero ex soluta quidem consequuntur fugiat.
+                                </p>
+                            </div>
+                        </section>
+                        <!-- Skills - TEXT 5 ************************************* -->
+                        <section class="text_row row_hidden" id="databases">
+                            <div class="text_box">
+                                <div class="part_icon">
+                                    <div class="icon_column">
+                                        <img src="assets/icons/sql_icon.png" class="skill_icon sql_icon" alt="">
+                                        <img src="assets/icons/php_icon.png" class="skill_icon" alt="">
+                                    </div>
+                                </div>
+                                <p class="part_text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Sint sequi velit quo odio dolore vero ex soluta quidem consequuntur fugiat.
+                                </p>
+                            </div>
+                        </section>
+                        <!-- Skills - TEXT 6 ************************************* -->
+                        <section class="text_row row_hidden" id="design">
+                            <div class="text_box">
+                                <div class="part_icon">
+                                    <div class="icon_column">
+                                        <div class="icon_row">
+                                            <img src="assets/icons/creativecloud_icon.png" class="skill_icon cc_icon" alt="">
+                                            <img src="assets/icons/prem_icon.png" class="skill_icon prem_icon" alt="">
+                                        </div>
+                                        <img src="assets/icons/fcp_icon.png" class="skill_icon fcp_icon" alt="">
+                                    </div>                                        
+                                </div>
+                                <p class="part_text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Voluptate mollitia reprehenderit voluptatem cumque sit unde, sapiente ex sed ut praesentium!
+                                </p>
+                            </div>
+                        </section>
+                    </article>
+                </section>
+            </article>
+        </section>
+    </aside>
+    <!------INDEX---------------------------------------------->
+    <section class="mid_section">
+        <!------TITLE------------------------------------------------------>
+        <header class="title_header" id="mainTitle">
+            <div class="title_flex" id="title_bg">
+                <section class="title_section">
+                    <aside class="name_box">
+                        <h1 class="name">Jeroen De Vos</h1>
+                    </aside>
+                    <aside class="photo_box">
+                        <img class="portret" src="assets/photos/Jeroen.png" alt="black and white photo Jeroen">
+                    </aside>
+                </section>
+                <footer class="function_section"">
+                    <h2 class="functionTitle">Front&#183;end web developer</h2>
+                    <div class="open_part"></div>
+                </footer>
+            </div>
+        </header>
+
+        <!------HIDDEN TITLE----------------------------------------------->
+        <header class="pageTitle_box pageTitle_visible" id="pageTitle">
+            <h3 class="page_title">Welcome to my portfolio</h3>
+        </header>
+
+        <!------MAIN------------------------------------------------------->
+        <main class="main_info">
+            <section class="index_sec_one index_hidden" id="contentMenu">
+                <div class="content_info" id="contentBox">
+                    <h3 class="content_title">Content</h3>
+                    <div class="content_text" id="textBox">
+                        <p class="content_subtitle">This portfolio is divided over two pages.</p>
+                        <p class="content_subtext">So you can choose what information you wan't to see (first).</p>
+                    </div>
+                    <div class="list_box">
+                        <button class="left_button" id="info_btn">
+                            <div class="page_title left_title">
+                                <p class="title_text">info - page</p>
+                            </div>
+                            <div class="btn_bg">
+                                <h2 class="pop-up_title">View page</h2>
+                            </div>
+                            <div class="left_list">
+                                <ul class="content_list">
+                                    <li>
+                                        <p class="list_text">About me</p>
+                                        <p class="list_icon">&#10003;</p>
+                                    </li>
+                                    <li>
+                                        <p class="list_text">Education</p>
+                                        <p class="list_icon">&#10003;</p>
+                                    </li>
+                                    <li>
+                                        <p class="list_text">Skills</p>
+                                        <p class="list_icon">&#10003;</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </button>
+                        <button class="right_button" id="projects_btn">
+                            <div class="page_title right_title">
+                                <p class="title_text">projects - page</p>
+                            </div>
+                            <div class="btn_bg">
+                                <h2 class="pop-up_title">View page</h2>
+                            </div>
+                            <div class="right_list">
+                                <ul class="content_list">
+                                    <li>
+                                        <p class="list_icon">&#10003;</p>
+                                        <p class="list_text">Video</p>
+                                    </li>
+                                    <li>
+                                        <p class="list_icon">&#10003;</p>
+                                        <p class="list_text">V-card</p>
+                                    </li>
+                                    <li>
+                                        <p class="list_icon">&#10003;</p>
+                                        <p class="list_text">Projects</p>
+                                    </li>
+                                </ul>
+                            </div>       
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section class="windowload_popup text_visible" id="introMessage">
+                <div class="popup_info" id="popupBox">
+                    <div class="button_part">
+                        <button class="close_popup" id="closeIntro"><p>&#10005;</p></button>
+                        <div class="close_tooltip">
+                            <div class="droparrow"></div>
+                            <p class="tooltip_text">continue to the<br>the content page</p>
+                        </div>
+                    </div>
+                    <div class="text_part">
+                        <h3 class="popup_title">Please take into account that:</h3>
+                        <h4 class="popup_subtitle">This portfolio is still a work in progress!</h4>
+                        <div class="popup_textBox" id="textBox">
+                            <p class="popup_text">
+                                The <span>first part</span> is finished. This contains mainly the functionality and basic layout.
+                                <br>Also taking in consideration that later on projects and/or skills can be added easily.
+                                <br>Because we all know 'learning' is a never ending road in programming. 🤔
+                            </p>
+                            <p class="popup_text">
+                                The <span>second part</span> is at this moment still fully progressing each day.
+                                <br>This segment is mainly the content itself. Adding the correct titles, text and descriptions,
+                                <br>connect the links (or dots), putting the projects in the right order, etc.
+                            </p>
+                            <p class="popup_text">
+                                As long as this second part it's not fully finished, this message will show up
+                                <br>when opening the main page. Just to remeber the viewer that untill finished, 
+                                <br>this project is mainly a showcase of my skills.
+                                <br>And <span>not yet a complete and accuarte curriculum vitae</span>.
+                            </p>
+                            <p class="popup_text">
+                                Jeroen
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </section>
+    <!------R-SLIDE-IN----------------------------------------->
+    <aside class="right_slide" id="rightSlideIn">
+        <!------ Projects title ------------------->
+        <header class="projects_header">
+            <div class="title_flex">
+                <section class="title_section">
+                    <div class="name_box">
+                        <h1 class="name">Jeroen De Vos</h1>
+                    </div>
+                    <div class="image_box">
+                        <img class="coding_icon" src="assets/icons/coding_green.png" alt="">
+                    </div>
+                    <div class="page_box">
+                        <h2 class="pageTitle">Portfolio > Projects Page</h2>
+                    </div>
+                </section>
+                <a class="new_window_link" href="projectpage.html" id="proj_window_link">
+                    <div class="new_window_box" id="projNewWindow">
+                        <img class="window_icon proj_icon" src="assets/icons/window_green.png" alt="">
+                    </div>
+                    <div class="window_tooltip">
+                        <div class="droparrow"></div>
+                        <p class="tooltip_text">open projects page<br>in new window</p>
+                    </div>
+                </a>
+            </div>
+        </header>
+        <!------ Projects section ----------------->
+        <section class="performances_section" id="performances">
+            <!------ PROJECTS --------------------------------------------------->
+            <article class="info_box" id="projectsInfoBox">
+                <header class="title_box title_hover" id="openProjects">
+                    <h3 class="info_title">Projects.</h3>
+                </header>
+                <section class="info_text" id="projectsBox">
+                    <!-- Html Css - Projects ************************************* -->
+                    <article class="info_article">
+                        <header class="subtitle_box subtitle_hover" id="showHtmlCssProjBtn">
+                            <h4 class="sub_title">HTML & CSS/SASS</h4>
+                            <img class="arrow" id="htmlCssArrow" src="assets/icons/arrow_down_1b.png" alt="arrow down">
+                        </header>
+                        <section class="projects text_hidden" id="htmlCssProjects">
+                            <!-- Html Css - Proj 1 ------------------- -->
+                            <article class="proj_article">
+                                <header class="proj_title_box proj_title_hover" id="showHtmlCssOne">
+                                    <h4 class="proj_title">Multipage website</h4>
+                                    <img class="proj_arrow" id="htmlCssOneArrow" src="assets/icons/arrow_down_1c.png" alt="arrow down">
+                                </header>
+                                <section class="proj_content_box proj_hidden" id="htmlCssOne">
+                                    <div class="proj_text">
+                                        <header class="proj_header">
+                                            <div class="proj_subTitle_box">
+                                                <h4 class="part_title">Event page with time-shedules, speakers info, locations maps and register page.</h4>
+                                                <h5 class="part_sub_title">Including all important html elements.</h5>
+                                            </div>
+                                            <a class="proj_link" href=""><p>open project</p></a>
+                                        </header>
+                                        <p class="part_text">Excercise from the 'Odin project' a full stack internet course.</p>
+                                        <p class="part_text">Like in most excersise I did, I adapted some personal features.</p>
+                                        <p class="part_text">Not only to make it more interesting, but mainly to test my skills even more.</p>
+                                    </div> 
+                                </section>
+                                <!-- Hide HtmlCss Porject 1 ************* -->
+                                <section class="proj_hide_btn btn_hidden" id="hideHtmlCssOne">
+                                    <img class="arrow" id="htmlCssOneHideArrow" src="assets/icons/arrow_up_1c.png" alt="arrow up">
+                                    <h4 class="hide_title">hide</h4>
+                                </section>
+                            </article>
+                            <!-- Html Css - Proj 2 ------------------- -->
+                            <article class="proj_article proj_margin">
+                                <header class="proj_title_box proj_title_hover" id="showHtmlCssTwo">
+                                    <h4 class="proj_title">Proj Title</h4>
+                                    <img class="proj_arrow" id="htmlCssTwoArrow" src="assets/icons/arrow_down_1c.png" alt="arrow down">
+                                </header>
+                                <section class="proj_content_box proj_hidden" id="htmlCssTwo">
+                                    <div class="proj_text">
+                                        <header class="proj_header">
+                                            <div class="proj_subTitle_box">
+                                                <h4 class="part_title">Hohohhohoh</h4>
+                                                <h5 class="part_sub_title">Lalalalala</h5>
+                                            </div>
+                                            <a class="proj_link" href=""><p>open project</p></a>
+                                        </header>
+                                        <p class="part_text">jajaja</p>
+                                        <p class="part_text">jajaja</p>
+                                        <p class="part_text">jajaja</p>
+                                    </div> 
+                                </section>
+                                <!-- Hide HtmlCss Porject 2 ************* -->
+                                <section class="proj_hide_btn btn_hidden" id="hideHtmlCssTwo">
+                                    <img class="arrow" id="htmlCssTwoHideArrow" src="assets/icons/arrow_up_1c.png" alt="arrow up">
+                                    <h4 class="hide_title">hide</h4>
+                                </section>
+                        </article>
+                        </section>
+                        <!-- Hide HtmlCss Porjects **************************** -->
+                        <section class="hide_btn btn_hidden" id="hideHtmlCssProjBtn">
+                            <img class="arrow" id="htmlCssHideArrow" src="assets/icons/arrow_up_1b.png" alt="arrow up">
+                            <h4 class="hide_title">hide</h4>
+                        </section>
+                    </article>
+                    <!-- JavaScript - Projects ************************************* -->
+                    <article class="info_article spec_margin">
+                        <header class="subtitle_box subtitle_hover" id="showJsProjBtn">
+                            <h4 class="sub_title">JavaScript</h4>
+                            <img class="arrow" id="jsArrow" src="assets/icons/arrow_down_1b.png" alt="arrow down">
+                        </header>
+                        <section class="projects text_hidden" id="jsProjects">
+                            <div class="projects_box">
+                            <!-- JavaScript - Proj 1 ------------------- -->
+                                <article class="proj_article">
+                                    <header class="proj_title_box proj_title_hover" id="showJsOne">
+                                        <h4 class="proj_title">Calculator <span>(ongoing project)</span></h4>
+                                        <img class="proj_arrow" id="jsOneArrow" src="assets/icons/arrow_down_1c.png" alt="arrow down">
+                                    </header>
+                                    <section class="proj_content_box proj_hidden" id="jsOne">
+                                        <div class="proj_text">
+                                            <header class="proj_header">
+                                                <div class="proj_subTitle_box">
+                                                    <h4 class="part_title">Hohohhohoh</h4>
+                                                    <h5 class="part_sub_title">Lalalalala</h5>
+                                                </div>
+                                                <a class="proj_link" href=""><p>open project</p></a>
+                                            </header>
+                                            <p class="part_text"></p>
+                                            <p class="part_text"></p>
+                                            <p class="part_text"></p>
+                                        </div> 
+                                    </section>
+                                    <!-- Hide JS Porject 1 ------------- -->
+                                    <section class="proj_hide_btn btn_hidden" id="hideJsOne">
+                                        <img class="arrow" id="jsOneHideArrow" src="assets/icons/arrow_up_1c.png" alt="arrow up">
+                                        <h4 class="hide_title">hide</h4>
+                                    </section>
+                                </article>
+                            <!-- JavaScript - Proj 2 ------------------- -->
+                                <article class="proj_article proj_margin">
+                                    <header class="proj_title_box proj_title_hover" id="showJsTwo">
+                                        <h4 class="proj_title">Rock Paper Scissors</h4>
+                                        <img class="proj_arrow" id="jsTwoArrow" src="assets/icons/arrow_down_1c.png" alt="arrow down">
+                                    </header>
+                                    <section class="proj_content_box proj_hidden" id="jsTwo">
+                                        <div class="proj_text">
+                                            <header class="proj_header">
+                                                <div class="proj_subTitle_box">
+                                                    <h4 class="part_title">Hohohhohoh</h4>
+                                                    <h5 class="part_sub_title">Lalalalala</h5>
+                                                </div>
+                                                <a class="proj_link" href=""><p>open project</p></a>
+                                            </header>
+                                            <p class="part_text"></p>
+                                            <p class="part_text"></p>
+                                            <p class="part_text"></p>
+                                        </div> 
+                                    </section>
+                                    <!-- Hide JS Porject 2 ------------- -->
+                                    <section class="proj_hide_btn btn_hidden" id="hideJsTwo">
+                                        <img class="arrow" id="jsTwoHideArrow" src="assets/icons/arrow_up_1c.png" alt="arrow up">
+                                        <h4 class="hide_title">hide</h4>
+                                    </section>
+                                </article>
+                            <!-- JavaScript - Proj 3 ------------------- -->
+                                <article class="proj_article proj_margin">
+                                    <header class="proj_title_box proj_title_hover" id="showJsThree">
+                                        <h4 class="proj_title">Simple Calender <span>(ongoing project)</span></h4>
+                                        <img class="proj_arrow" id="jsThreeArrow" src="assets/icons/arrow_down_1c.png" alt="arrow down">
+                                    </header>
+                                    <section class="proj_content_box proj_hidden" id="jsThree">
+                                        <div class="proj_text">
+                                            <header class="proj_header">
+                                                <div class="proj_subTitle_box">
+                                                    <h4 class="part_title">Hohohhohoh</h4>
+                                                    <h5 class="part_sub_title">Lalalalala</h5>
+                                                </div>
+                                                <a class="proj_link" href=""><p>open project</p></a>
+                                            </header>
+                                            <p class="part_text"></p>
+                                            <p class="part_text"></p>
+                                            <p class="part_text"></p>
+                                        </div> 
+                                    </section>
+                                    <!-- Hide JS Porject 3 ------------- -->
+                                    <section class="proj_hide_btn btn_hidden" id="hideJsThree">
+                                        <img class="arrow" id="jsThreeHideArrow" src="assets/icons/arrow_up_1c.png" alt="arrow up">
+                                        <h4 class="hide_title">hide</h4>
+                                    </section>
+                                </article>
+                            </div> 
+                        </section>
+                        <!-- Hide JS Porjects ************************************* -->
+                        <section class="hide_btn btn_hidden" id="hideJsProjBtn">
+                            <img class="arrow" id="jsHideArrow" src="assets/icons/arrow_up_1b.png" alt="arrow up">
+                            <h4 class="hide_title">hide</h4>
+                        </section>
+                    </article>
+                    <!-- Fetch() - Projects ************************************* -->
+                    <article class="info_article spec_margin">
+                        <header class="subtitle_box subtitle_hover" id="showFetchProjBtn">
+                            <h4 class="sub_title">Fetch() method (for API's)</h4>
+                            <img class="arrow" id="fetchArrow" src="assets/icons/arrow_down_1b.png" alt="arrow down">
+                        </header>
+                        <section class="projects text_hidden" id="fetchProjects">
+                            <div class="projects_box">
+                            <!-- Fetch() - Proj 1 ------------------- -->
+                                <article class="proj_article">
+                                    <header class="proj_title_box proj_title_hover" id="showFetchOne">
+                                        <h4 class="proj_title">Weather app - <span>With geolacation or input form</span></h4>
+                                        <img class="proj_arrow" id="fetchOneArrow" src="assets/icons/arrow_down_1c.png" alt="arrow down">
+                                    </header>
+                                    <section class="proj_content_box proj_hidden" id="fetchOne">
+                                        <div class="proj_text">
+                                            <header class="proj_header">
+                                                <div class="proj_subTitle_box">
+                                                    <h4 class="part_title">Hohohhohoh</h4>
+                                                    <h5 class="part_sub_title">Lalalalala</h5>
+                                                </div>
+                                                <a class="proj_link" href=""><p>open project</p></a>
+                                            </header>
+                                            <p class="part_text"></p>
+                                            <p class="part_text"></p>
+                                            <p class="part_text"></p>
+                                        </div> 
+                                    </section>
+                                    <!-- Hide Fetch Porject 1 ------------- -->
+                                    <section class="proj_hide_btn btn_hidden" id="hideFetchOne">
+                                        <img class="arrow" id="fetchOneHideArrow" src="assets/icons/arrow_up_1c.png" alt="arrow up">
+                                        <h4 class="hide_title">hide</h4>
+                                    </section>
+                                </article>
+                            <!-- Fetch() - Proj 2 ------------------- -->
+                                <article class="proj_article proj_margin">
+                                    <header class="proj_title_box proj_title_hover" id="showFetchTwo">
+                                        <h4 class="proj_title">Smart Fridge - Cooking app <span>(ongoing project)</span></h4>
+                                        <img class="proj_arrow" id="fetchTwoArrow" src="assets/icons/arrow_down_1c.png" alt="arrow down">
+                                    </header>
+                                    <section class="proj_content_box proj_hidden" id="fetchTwo">
+                                        <div class="proj_text">
+                                            <header class="proj_header">
+                                                <div class="proj_subTitle_box">
+                                                    <h4 class="part_title">Hohohhohoh</h4>
+                                                    <h5 class="part_sub_title">Lalalalala</h5>
+                                                </div>
+                                                <a class="proj_link" href=""><p>open project</p></a>
+                                            </header>
+                                            <p class="part_text"></p>
+                                            <p class="part_text"></p>
+                                            <p class="part_text"></p>
+                                        </div> 
+                                    </section>
+                                    <!-- Hide Fetch Porject 2 ------------- -->
+                                    <section class="proj_hide_btn btn_hidden" id="hideFetchTwo">
+                                        <img class="arrow" id="fetchTwoHideArrow" src="assets/icons/arrow_up_1c.png" alt="arrow up">
+                                        <h4 class="hide_title">hide</h4>
+                                    </section>
+                                </article>
+                            <!-- Fetch() - Proj 3 ------------------- -->
+                                <article class="proj_article proj_margin">
+                                    <header class="proj_title_box proj_title_hover" id="showFetchThree">
+                                        <h4 class="proj_title">Pokedex - Info app <span>(ongoing project)</span></h4>
+                                        <img class="proj_arrow" id="fetchThreeArrow" src="assets/icons/arrow_down_1c.png" alt="arrow down">
+                                    </header>
+                                    <section class="proj_content_box proj_hidden" id="fetchThree">
+                                        <div class="proj_text">
+                                            <header class="proj_header">
+                                                <div class="proj_subTitle_box">
+                                                    <h4 class="part_title">Hohohhohoh</h4>
+                                                    <h5 class="part_sub_title">Lalalalala</h5>
+                                                </div>
+                                                <a class="proj_link" href=""><p>open project</p></a>
+                                            </header>
+                                            <p class="part_text"></p>
+                                            <p class="part_text"></p>
+                                            <p class="part_text"></p>
+                                        </div> 
+                                    </section>
+                                    <!-- Hide Fetch Porject 3 ------------- -->
+                                    <section class="proj_hide_btn btn_hidden" id="hideFetchThree">
+                                        <img class="arrow" id="fetchThreeHideArrow" src="assets/icons/arrow_up_1c.png" alt="arrow up">
+                                        <h4 class="hide_title">hide</h4>
+                                    </section>
+                                </article>
+                            </div> 
+                        </section>
+                        <!-- Hide Fetch Porjects ************************************* -->
+                        <section class="hide_btn btn_hidden" id="hideFetchProjBtn">
+                            <img class="arrow" id="fetchHideArrow" src="assets/icons/arrow_up_1b.png" alt="arrow up">
+                            <h4 class="hide_title">hide</h4>
+                        </section>
+                    </article>
+                    <!-- FRAMEWORKS - Projects ************************************* -->
+                    <article class="info_article spec_margin">
+                        <header class="subtitle_box subtitle_hover" id="showFwsProjBtn">
+                            <h4 class="sub_title">Frameworks</h4>
+                            <img class="arrow" id="fwsArrow" src="assets/icons/arrow_down_1b.png" alt="arrow down">
+                        </header>
+                        <section class="projects text_hidden" id="fwsProjects">
+                            <div class="projects_box">
+                            <!-- Frameworks - Proj 1 ------------------- -->
+                                <article class="proj_article">
+                                    <header class="proj_title_box proj_title_hover" id="showFwOne">
+                                        <h4 class="proj_title">Proj Title</h4>
+                                        <img class="proj_arrow" id="fwOneArrow" src="assets/icons/arrow_down_1c.png" alt="arrow down">
+                                    </header>
+                                    <section class="proj_content_box proj_hidden" id="fwOne">
+                                        <div class="proj_text">
+                                            <header class="proj_header">
+                                                <div class="proj_subTitle_box">
+                                                    <h4 class="part_title">Hohohhohoh</h4>
+                                                    <h5 class="part_sub_title">Lalalalala</h5>
+                                                </div>
+                                                <a class="proj_link" href=""><p>open project</p></a>
+                                            </header>
+                                            <p class="part_text"></p>
+                                            <p class="part_text"></p>
+                                            <p class="part_text"></p>
+                                        </div> 
+                                    </section>
+                                    <!-- Hide Frameworks Porject 1 ************************************* -->
+                                    <section class="proj_hide_btn btn_hidden" id="hideFwOne">
+                                        <img class="arrow" id="fwOneHideArrow" src="assets/icons/arrow_up_1c.png" alt="arrow up">
+                                        <h4 class="hide_title">hide</h4>
+                                    </section>
+                                </article>
+                            </div> 
+                        </section>
+                        <!-- Hide Frameworks Porjects ************************************* -->
+                        <section class="hide_btn btn_hidden" id="hideFwsProjBtn">
+                            <img class="arrow" id="fwsHideArrow" src="assets/icons/arrow_up_1b.png" alt="arrow up">
+                            <h4 class="hide_title">hide</h4>
+                        </section>
+                    </article>
+                    <!-- PHP - SQL - DATABASES Projects ************************************* -->
+                    <article class="info_article spec_margin">
+                        <header class="subtitle_box subtitle_hover" id="showServerProjBtn">
+                            <h4 class="sub_title">Server-side Programming & Databases</h4>
+                            <img class="arrow" id="serverArrow" src="assets/icons/arrow_down_1b.png" alt="arrow down">
+                        </header>
+                        <section class="projects text_hidden" id="serverProjects">
+                            <div class="projects_box">
+                            <!-- SERVER - Proj 1 ------------------- -->
+                                <article class="proj_article">
+                                    <!--
+                                    <header class="proj_title_box proj_title_hover" id="showServerOne">
+                                        <h4 class="proj_title">Proj Title</h4>
+                                        <img class="proj_arrow" id="serverOneArrow" src="assets/icons/arrow_down_1c.png" alt="arrow down">
+                                    </header>
+                                    -->
+                                    <section class="proj_content_box proj_visible" id="serverOne">
+                                        <div class="proj_text">
+                                            <header class="proj_header">
+                                                <div class="proj_subTitle_box">
+                                                    <h4 class="part_title">Hohohhohoh</h4>
+                                                    <h5 class="part_sub_title">Lalalalala</h5>
+                                                </div>
+                                                <a class="proj_link" href="https://github.com/Jeroen-editing"><p>open my github</p></a>
+                                            </header>
+                                            <p class="part_text"></p>
+                                            <p class="part_text"></p>
+                                            <p class="part_text"></p>
+                                        </div> 
+                                    </section>
+                                    <!-- Hide Porject 1 *************************************
+                                    <section class="proj_hide_btn btn_hidden" id="hideServerOne">
+                                        <img class="arrow" src="assets/icons/arrow_up_1c.png" alt="arrow up">
+                                        <h4 class="hide_title">hide</h4>
+                                    </section>
+                                    -->
+                                </article>
+                            </div> 
+                        </section>
+                        <!-- Hide Porjects ************************************* -->
+                        <section class="hide_btn btn_hidden" id="hideServerProjBtn">
+                            <img class="arrow" id="serverHideArrow" src="assets/icons/arrow_up_1b.png" alt="arrow up">
+                            <h4 class="hide_title">hide</h4>
+                        </section>
+                    </article>
+                    <!-- Ruby Projects ************************************* -->
+                    <article class="info_article">
+                        <header class="subtitle_box subtitle_hover" id="showRubyProjBtn">
+                            <h4 class="sub_title">Ruby & Ruby on Rails</h4>
+                            <img class="arrow" id="rubyArrow" src="assets/icons/arrow_down_1b.png" alt="arrow down">
+                        </header>
+                        <section class="projects text_hidden" id="rubyProjects">
+                            <div class="projects_box">
+                            <!-- Ruby - Proj 1 ------------------- -->
+                                <article class="proj_article">
+                                    <!--
+                                    <header class="proj_title_box proj_title_hover" id="showRubyOne">
+                                        <h4 class="proj_title">Proj Title</h4>
+                                        <img class="proj_arrow" id="rubyOneArrow" src="assets/icons/arrow_down_1b.png" alt="arrow down">
+                                    </header>
+                                    -->
+                                    <section class="proj_content_box proj_visible" id="rubyOne">
+                                        <div class="proj_text">
+                                            <header class="proj_header">
+                                                <div class="proj_subTitle_box">
+                                                    <h4 class="part_title">Hohohhohoh</h4>
+                                                    <h5 class="part_sub_title">Lalalalala</h5>
+                                                </div>
+                                                <a class="proj_link" href="https://github.com/Jeroen-editing"><p>open my github</p></a>
+                                            </header>
+                                            <p class="part_text"></p>
+                                            <p class="part_text"></p>
+                                            <p class="part_text"></p>
+                                        </div> 
+                                    </section>
+                                    <!-- Hide Porject 1 ************************************* 
+                                    <section class="proj_hide_btn btn_hidden" id="hideRubyOne">
+                                        <img class="arrow" src="assets/icons/arrow_up_1b.png" alt="arrow up">
+                                        <h4 class="hide_title">hide</h4>
+                                    </section>
+                                    -->
+                                </article>
+                            </div> 
+                        </section>
+                        <!-- Hide Porjects ************************************* -->
+                        <section class="hide_btn btn_hidden" id="hideRubyProjBtn">
+                            <img class="arrow" id="rubyHideArrow" src="assets/icons/arrow_up_1b.png" alt="arrow up">
+                            <h4 class="hide_title">hide</h4>
+                        </section>
+                    </article>
+                    <!-- Phyton Projects ************************************* -->
+                    <article class="info_article spec_margin">
+                        <header class="subtitle_box subtitle_hover" id="showPhytonProjBtn">
+                            <h4 class="sub_title">Phyton</h4>
+                            <img class="arrow" id="phytonArrow" src="assets/icons/arrow_down_1b.png" alt="arrow down">
+                        </header>
+                        <section class="projects text_hidden" id="phytonProjects">
+                            <div class="projects_box">
+                            <!-- Data - Proj 1 ------------------- -->
+                                <article class="proj_article">
+                                    <!--
+                                    <header class="proj_title_box proj_title_hover" id="showPhytonOne">
+                                        <h4 class="proj_title">Proj Title</h4>
+                                        <img class="proj_arrow" id="phytonOneArrow" src="assets/icons/arrow_down_1c.png" alt="arrow down">
+                                    </header>
+                                    -->
+                                    <section class="proj_content_box proj_visible" id="phytonOne">
+                                        <div class="proj_text">
+                                            <header class="proj_header">
+                                                <div class="proj_subTitle_box">
+                                                    <h4 class="part_title">Hohohhohoh</h4>
+                                                    <h5 class="part_sub_title">Lalalalala</h5>
+                                                </div>
+                                                <a class="proj_link" href="https://github.com/Jeroen-editing"><p>open my github</p></a>
+                                            </header>
+                                            <p class="part_text"></p>
+                                            <p class="part_text"></p>
+                                            <p class="part_text"></p>
+                                        </div> 
+                                    </section>
+                                    <!-- Hide Porject 1 ************************************* 
+                                    <section class="proj_hide_btn btn_hidden" id="hidePhytonOne">
+                                        <img class="arrow" src="assets/icons/arrow_up_1c.png" alt="arrow up">
+                                        <h4 class="hide_title">hide</h4>
+                                    </section>
+                                    -->
+                                </article>
+                            </div> 
+                        </section>
+                        <!-- Hide Porjects ************************************* -->
+                        <section class="hide_btn btn_hidden" id="hidePhytonProjBtn">
+                            <img class="arrow" id="phytonHideArrow" src="assets/icons/arrow_up_1b.png" alt="arrow up">
+                            <h4 class="hide_title">hide</h4>
+                        </section>
+                    </article>
+                </section>
+            </article>
+
+            <div class="open_space"></div>
+            <!------ VIDEO ------------------------------------------------------>
+            <article class="info_box" id="videoInfoBox">
+                <header class="title_box title_hover" id="openVideo">
+                    <h3 class="info_title">Video.</h3>
+                </header>
+                <section class="info_text" id="videoBox">
+                    <article class="info_article">
+                        <section class="article_tv">
+                            <div class="tv_box">
+                                <video class="video_player" id="video" src="assets/video/Company.m4v" controls></video>
+                            </div>
+                            <div class="tv_subtext">
+                                <p class="part_text">
+                                    Ullam distinctio in suscipit, molestias laudantium sed hic vero expedita maxime 
+                                    commodi nam magni non aspernatur cumque fugit, minus quod doloribus. Odio dolorem 
+                                    iusto corporis repudiandae ipsam reiciendis.
+                                </p>
+                            </div>
+                        </section>
+                    </article>
+                </section>
+            </article>
+
+            <div class="open_space"></div>
+            <!------ V-CARD ----------------------------------------------------->
+            <article class="info_box" id="vcardInfoBox">
+                <header class="title_box title_hover" id="openVCard">
+                    <h3 class="info_title">V-card</h3>
+                </header>
+                <section class="info_text" id="v_cardBox">
+                    <article class="info_article vcard_article">
+                        <section class="text_section">
+                            <p class="part_text">
+                                Ullam distinctio in suscipit, molestias laudantium sed hic vero expedita maxime 
+                                commodi nam magni non aspernatur cumque fugit, minus quod doloribus. Odio dolorem 
+                                iusto corporis repudiandae ipsam reiciendis.
+                            </p>
+                        </section>
+                        <section class="vcard_section" id="vcardBtn">
+                            <div class="vcard_content special">
+                                <header>
+                                    <h1>
+                                        <span>&#9744;</span><span class="text">Web development</span>
+                                        <span>&#9744;</span>
+                                        <span class="text">Web design</span><span>&#9744;</span>
+                                    </h1>
+                                </header>
+                                <section>
+                                    <address>
+                                        <div class="vcard">
+                                            <span id="fn">Jeroen De Vos</span>
+                                            <div class="org">Jeroen-editing</div>
+                                            <a id="email" href="mailto:jdv.editing@gmail.com">jdv.editing@gmail.com</a>
+                                            <div class="adr">
+                                                <div class="street-address">Volkstraat 1</div>
+                                                <span class="locality">Antwerp</span> -
+                                                <span class="region">Antwerp</span>
+                                                <span class="postal-code">2000</span> -
+                                                <span class="country-name">BEL</span>
+                                            </div>
+                                        </div>
+                                    </address>
+                                </section>
+                                <footer>
+                                    <h2>
+                                        <span>&#9744;</span><span class="text">Video editing</span>
+                                        <span>&#9744;</span>
+                                        <span class="text">Graphic design</span><span>&#9744;</span>
+                                    </h2>
+                                </footer>
+                            </div>
+                        </section>
+                    </article>
+                </section>
+            </article>        
+        </section> 
+    </aside>
+    <!------R-ASIDE-------------------------------------------->
+    <aside class="right_aside">
+        <div class="btns_box btn_hidden" id="projCloseBtn">
+            <button class="right_close_btn top_btn" id="projCloseBtnOne">
+                <h2 class="btn_text">close</h2>
+                <img class="btn_arrow" src="assets/icons/right_arrow2_green.png"  id="topArrowRight">
+                <h2 class="btn_text">page</h2>
+            </button>
+            <button class="right_close_btn bottom_btn" id="projCloseBtnTwo">
+                <h2 class="btn_text">close</h2>
+                <img class="btn_arrow" src="assets/icons/right_arrow2_green.png" id="botArrowRight">
+                <h2 class="btn_text">page</h2>
+            </button>
+        </div>
+        
+    </aside>
+</section>
+
+<!------FOOTER-------------------------------------------------------->
+<footer class="page_footer">
+    <div class="rights_box">
+        <p><span>&#60;&#8725;&#62;</span>&nbsp;</p>
+        <p class="rights" id="date"></p>
+        <p>&nbsp;<span>&#60;&#8725;&#62;</span></p>
+    </div>
+    &nbsp;&nbsp;
+    <div class="location_box">
+        <p><span>&#60;&#8725;&#62;</span>&nbsp;</p>
+        <div class="aname_box">
+            <p class="name">Jeroen De Vos</p>
+        </div>
+        <p class="at">&nbsp;&#64;&nbsp;</p>
+        <div class="city_box">
+            <p class="city">Antwerp</p>
+        </div>
+        <p class="at">&nbsp;&#64;&nbsp;</p>
+        <div class="region_box">
+            <p class="region">Antwerp / Flanders</p>
+        </div>
+        <p class="at">&nbsp;&#64;&nbsp;</p>
+        <div class="country_box">
+            <p class="country">Belgium</p>      
+        </div>
+        <p>&nbsp;<span>&#60;&#8725;&#62;</span></p>
+    </div>
+</footer>
+
+<script src="copyRights.js"></script>
+<script src="indexViews.js"></script>
+</body>
+</html>

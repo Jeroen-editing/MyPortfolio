@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J.D.V. - projectpage</title>
+
+    <link rel="stylesheet" href="css/projectStylesheet.css">
+    <!--<link rel="stylesheet" href="css/responsiveness.css">-->
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Cream+Soda&family=Dosis:wght@200;300;400;500;600;700;800&family=KoHo:wght@200;300;400;500;600;700&family=Macondo&family=Port+Lligat+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<!------ NAV -------------------------------------------------------->
+    <nav class="navbar">
+        <a href="mailto:jdv.editing@gmail.com?subject=Saw your portfolio." class="nav_link gmail">
+            <img src="assets/icons/gmail.png" class="gmail_icon" alt="gmail logo">
+            <p>Contact me</p>
+        </a>
+        <a href="" class="nav_link codecamp">
+            <img src="assets/icons/fire_black.png" class="freeCodeCamp_icon" alt="freeCodeCamp logo">
+            <p>freeCodeCamp</p>
+        </a>
+        <a href="https://github.com/Jeroen-editing" class="nav_link github">
+            <img src="assets/icons/github_black.png" class="github_icon" alt="github logo">
+            <p>github</p>
+        </a>
+        <a href="https://www.linkedin.com/in/jeroen-de-vos-39258718b/" class="nav_link linkedin">
+            <img src="assets/icons/linkedin.png" alt="LinkedIn logo">
+            <p>LinkedIn</p>
+        </a>
+        <div class="dropdown_menu" id="dropdown">
+            <button class="menu_link menu" id="menuLink">
+                <img src="assets/icons/menu_green.jpg" class="menu_icon" alt="menu logo">
+                <p>Menu</p>
+                <img src="assets/icons/menu_green.jpg" class="menu_icon" alt="menu logo">
+            </button>
+            <div class="menu_btns btns_hidden" id="menu_btns">
+                <a href="index.html" class="menu_link home" id="homeLink" target="_blank">
+                    <img src="assets/icons/homepage_2.png" class="home_icon" alt="home logo">
+                    <p>Home</p>
+                </a>
+                <a href="projectpage.html" class="menu_link performances" id="performancesLink" target="_blank">
+                    <img src="assets/icons/develop_2.png" class="project_icon" alt="home logo">
+                    <p>Projects page</p>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="background">
+    <!------ TITLE ------------------------------------------------------>
+        <header class="title_header">
+            <div class="title_flex">
+                <section class="title_section">
+                    <div class="name_box">
+                        <h1 class="name">Jeroen De Vos</h1>
+                    </div>
+                    <div class="image_box">
+                        <img src="assets/icons/coding_white.png" alt="">
+                    </div>
+                    <div class="page_box">
+                        <h2 class="pageTitle">Portfolio > ProjectsPage</h2>
+                    </div>
+                </section>
+            </div>
+        </header>
+
+    <!------ MAIN ------------------------------------------------------->
+        <main class="main_info">
+            <section class="performances_section" id="performances">
+                <div class="articles_box" id="msTwoBox">
+                <!------ PROJECTS --------------------------------------------------->
+                    <article class="info_box" id="projectsInfoBox">
+                        <div class="title_box title_hover" id="openProjects">
+                            <h3 class="info_title">Projects.</h3>
+                            <img class="arrow" id="projectsArrow" src="assets/icons/arrow_down_1c.png" alt="arrow down">
+                        </div>
+                        <section class="info_text text_hidden" id="projectsBox">
+                            <!-- Html Css - Projects ************************************* -->
+                            <article class="info_article">
+                                <header class="subtitle_box subtitle_hover" id="showHtmlCssProjBtn">
+                                    <h4 class="sub_title">HTML & CSS/SASS</h4>
+                                    <img class="arrow" id="htmlCssArrow" src="assets/icons/arrow_down_1a.png" alt="arrow down">
+                                </header>
+                                <section class="article_text text_hidden" id="htmlCssProjects">
+                                    <div class="projects_box">
+                                        <!-- Html Css - Proj 1 ------------------- -->
+                                        <article class="proj_article">
+                                            <header class="proj_title_box proj_title_hover" id="showHtmlCssOne">
+                                                <h4 class="proj_title">Proj Title</h4>
+                                                <img class="proj_arrow" id="htmlCssOneArrow" src="assets/icons/arrow_down_1a.png" alt="arrow down">
+                                            </header>
+                                            <section class="proj_content_box proj_hidden" id="htmlCssOne">
+                                                <div class="proj_text">
+                                                    <h4 class="part_title">lalala</h4>
+                                                    <h5 class="part_sub_title">hohoho</h5>
+                                                    <p class="part_text">jajaja</p>
+                                                    <p class="part_text"></p>
+                                                    <p class="part_text"></p>
+                                                    <a class="site_link" href=""><p>open project</p></a>
+                                                </div> 
+                                            </section>
+                                            <!-- Hide Porject ************************************* -->
+                                            <section class="hide_btn btn_hidden" id="hideHtmlCssOne">
+                                                <img class="arrow" src="assets/icons/arrow_up_1c.png" alt="arrow up">
+                                                <h4 class="hide_title">hide</h4>
+                                            </section>
+                                        </article>
+                                    </div> 
+                                </section>
+                                <!-- Hide Porjects ************************************* -->
+                                <section class="hide_btn btn_hidden" id="hideHtmlCssProjBtn">
+                                    <img class="arrow" src="assets/icons/arrow_up_1c.png" alt="arrow up">
+                                    <h4 class="hide_title">hide</h4>
+                                </section>
+                            </article>
+                            <!-- JavaScript - Projects ************************************* -->
+                            <article class="info_article spec_margin">
+                                <header class="subtitle_box subtitle_hover" id="showJsProjBtn">
+                                    <h4 class="sub_title">JavaScript</h4>
+                                    <img class="arrow" id="jsArrow" src="assets/icons/arrow_down_1a.png" alt="arrow down">
+                                </header>
+                                <section class="article_text text_hidden" id="jsProjects">
+                                    <div class="projects_box">
+                                        <!-- JavaScript - Proj 1 ------------------- -->
+                                        <article class="proj_article">
+                                            <header class="proj_title_box proj_title_hover" id="showJsOne">
+                                                <h4 class="proj_title">Proj Title</h4>
+                                                <img class="proj_arrow" id="jsOneArrow" src="assets/icons/arrow_down_1a.png" alt="arrow down">
+                                            </header>
+                                            <section class="proj_content_box text_hidden" id="jsOne">
+                                                <div class="proj_text">
+                                                    <h4 class="part_title">lalala</h4>
+                                                    <h5 class="part_sub_title">hohoho</h5>
+                                                    <p class="part_text"></p>
+                                                    <p class="part_text"></p>
+                                                    <p class="part_text"></p>
+                                                    <a class="site_link" href=""><p>open project</p></a>
+                                                </div> 
+                                            </section>
+                                            <!-- Hide Porject 1 ************************************* -->
+                                            <section class="hide_btn btn_hidden" id="hideJsOne">
+                                                <img class="arrow" src="assets/icons/arrow_up_1c.png" alt="arrow up">
+                                                <h4 class="hide_title">hide</h4>
+                                            </section>
+                                        </article>
+                                    </div> 
+                                </section>
+                                <!-- Hide Porjects ************************************* -->
+                                <section class="hide_btn btn_hidden" id="hideJsProjBtn">
+                                    <img class="arrow" src="assets/icons/arrow_up_1c.png" alt="arrow up">
+                                    <h4 class="hide_title">hide</h4>
+                                </section>
+                            </article>
+                            <!-- Fetch() - Projects ************************************* -->
+                            <article class="info_article spec_margin">
+                                <header class="subtitle_box subtitle_hover" id="showFetchProjBtn">
+                                    <h4 class="sub_title">Fetch() method (for API's)</h4>
+                                    <img class="arrow" id="fetchArrow" src="assets/icons/arrow_down_1a.png" alt="arrow down">
+                                </header>
+                                <section class="article_text text_hidden" id="fetchProjects">
+                                    <div class="projects_box">
+                                        <!-- Fetch() - Proj 1 ------------------- -->
+                                        <article class="proj_article">
+                                            <header class="proj_title_box proj_title_hover" id="showFetchOne">
+                                                <h4 class="proj_title">Proj Title</h4>
+                                                <img class="proj_arrow" id="fetchOneArrow" src="assets/icons/arrow_down_1a.png" alt="arrow down">
+                                            </header>
+                                            <section class="proj_content_box text_hidden" id="fetchOne">
+                                                <div class="proj_text">
+                                                    <h4 class="part_title">lalala</h4>
+                                                    <h5 class="part_sub_title">hohoho</h5>
+                                                    <p class="part_text"></p>
+                                                    <p class="part_text"></p>
+                                                    <p class="part_text"></p>
+                                                    <a class="site_link" href=""><p>open project</p></a>
+                                                </div> 
+                                            </section>
+                                            <!-- Hide Porject 1 ************************************* -->
+                                            <section class="hide_btn btn_hidden" id="hideFetchOne">
+                                                <img class="arrow" src="assets/icons/arrow_up_1c.png" alt="arrow up">
+                                                <h4 class="hide_title">hide</h4>
+                                            </section>
+                                        </article>
+                                    </div> 
+                                </section>
+                                <!-- Hide Porjects ************************************* -->
+                                <section class="hide_btn btn_hidden" id="hideFetchProjBtn">
+                                    <img class="arrow" src="assets/icons/arrow_up_1c.png" alt="arrow up">
+                                    <h4 class="hide_title">hide</h4>
+                                </section>
+                            </article>
+                            <!-- PHP - Projects ************************************* -->
+                            <article class="info_article spec_margin">
+                                <header class="subtitle_box subtitle_hover" id="showPhpProjBtn">
+                                    <h4 class="sub_title">PHP</h4>
+                                    <img class="arrow" id="phpArrow" src="assets/icons/arrow_down_1a.png" alt="arrow down">
+                                </header>
+                                <section class="article_text text_hidden" id="phpProjects">
+                                    <div class="projects_box">
+                                        <!-- PHP - Proj 1 ------------------- -->
+                                        <article class="proj_article">
+                                            <header class="proj_title_box proj_title_hover" id="showPhpOne">
+                                                <h4 class="proj_title">Proj Title</h4>
+                                                <img class="proj_arrow" id="phpOneArrow" src="assets/icons/arrow_down_1a.png" alt="arrow down">
+                                            </header>
+                                            <section class="proj_content_box text_hidden" id="phpOne">
+                                                <div class="proj_text">
+                                                    <h4 class="part_title">lalala</h4>
+                                                    <h5 class="part_sub_title">hohoho</h5>
+                                                    <p class="part_text"></p>
+                                                    <p class="part_text"></p>
+                                                    <p class="part_text"></p>
+                                                    <a class="site_link" href=""><p>open project</p></a>
+                                                </div> 
+                                            </section>
+                                            <!-- Hide Porject 1 ************************************* -->
+                                            <section class="hide_btn btn_hidden" id="hidePhpOne">
+                                                <img class="arrow" src="assets/icons/arrow_up_1c.png" alt="arrow up">
+                                                <h4 class="hide_title">hide</h4>
+                                            </section>
+                                        </article>
+                                    </div> 
+                                </section>
+                                <!-- Hide Porjects ************************************* -->
+                                <section class="hide_btn btn_hidden" id="hidePhpProjBtn">
+                                    <img class="arrow" src="assets/icons/arrow_up_1c.png" alt="arrow up">
+                                    <h4 class="hide_title">hide</h4>
+                                </section>
+                            </article>
+                            <!-- SQL - Projects ************************************* -->
+                            <article class="info_article spec_margin">
+                                <header class="subtitle_box subtitle_hover" id="showSqlProjBtn">
+                                    <h4 class="sub_title">SQL</h4>
+                                    <img class="arrow" id="sqlArrow" src="assets/icons/arrow_down_1a.png" alt="arrow down">
+                                </header>
+                                <section class="article_text text_hidden" id="sqlProjects">
+                                    <div class="projects_box">
+                                        <!-- SQL - Proj 1 ------------------- -->
+                                        <article class="proj_article">
+                                            <header class="proj_title_box proj_title_hover" id="showSqlOne">
+                                                <h4 class="proj_title">Proj Title</h4>
+                                                <img class="proj_arrow" id="sqlOneArrow" src="assets/icons/arrow_down_1a.png" alt="arrow down">
+                                            </header>
+                                            <section class="proj_content_box text_hidden" id="sqlOne">
+                                                <div class="proj_text">
+                                                    <h4 class="part_title">lalala</h4>
+                                                    <h5 class="part_sub_title">hohoho</h5>
+                                                    <p class="part_text"></p>
+                                                    <p class="part_text"></p>
+                                                    <p class="part_text"></p>
+                                                    <a class="site_link" href=""><p>open project</p></a>
+                                                </div> 
+                                            </section>
+                                            <!-- Hide Porject 1 ************************************* -->
+                                            <section class="hide_btn btn_hidden" id="hideSqlOne">
+                                                <img class="arrow" src="assets/icons/arrow_up_1c.png" alt="arrow up">
+                                                <h4 class="hide_title">hide</h4>
+                                            </section>
+                                        </article>
+                                    </div> 
+                                </section>
+                                <!-- Hide Porjects ************************************* -->
+                                <section class="hide_btn btn_hidden" id="hideSqlProjBtn">
+                                    <img class="arrow" src="assets/icons/arrow_up_1c.png" alt="arrow up">
+                                    <h4 class="hide_title">hide</h4>
+                                </section>
+                            </article>
+                            <!-- Data Projects ************************************* -->
+                            <article class="info_article spec_margin">
+                                <header class="subtitle_box subtitle_hover" id="showDataProjBtn">
+                                    <h4 class="sub_title">Databases</h4>
+                                    <img class="arrow" id="dataArrow" src="assets/icons/arrow_down_1a.png" alt="arrow down">
+                                </header>
+                                <section class="article_text text_hidden" id="dataProjects">
+                                    <div class="projects_box">
+                                        <!-- Data - Proj 1 ------------------- -->
+                                        <article class="proj_article">
+                                            <header class="proj_title_box proj_title_hover" id="showDataOne">
+                                                <h4 class="proj_title">Proj Title</h4>
+                                                <img class="proj_arrow" id="dataOneArrow" src="assets/icons/arrow_down_1a.png" alt="arrow down">
+                                            </header>
+                                            <section class="proj_content_box text_hidden" id="dataOne">
+                                                <div class="proj_text">
+                                                    <h4 class="part_title">lalala</h4>
+                                                    <h5 class="part_sub_title">hohoho</h5>
+                                                    <p class="part_text"></p>
+                                                    <p class="part_text"></p>
+                                                    <p class="part_text"></p>
+                                                    <a class="site_link" href=""><p>open project</p></a>
+                                                </div> 
+                                            </section>
+                                            <!-- Hide Porject 1 ************************************* -->
+                                            <section class="hide_btn btn_hidden" id="hideDataOne">
+                                                <img class="arrow" src="assets/icons/arrow_up_1c.png" alt="arrow up">
+                                                <h4 class="hide_title">hide</h4>
+                                            </section>
+                                        </article>
+                                    </div> 
+                                </section>
+                                <!-- Hide Porjects ************************************* -->
+                                <section class="hide_btn btn_hidden" id="hideDataProjBtn">
+                                    <img class="arrow" src="assets/icons/arrow_up_1c.png" alt="arrow up">
+                                    <h4 class="hide_title">hide</h4>
+                                </section>
+                            </article>
+                            <!-- Ruby Projects ************************************* -->
+                            <article class="info_article">
+                                <header class="subtitle_box subtitle_hover" id="showRubyProjBtn">
+                                    <h4 class="sub_title">Ruby & Ruby on Rails</h4>
+                                    <img class="arrow" id="rubyArrow" src="assets/icons/arrow_down_1a.png" alt="arrow down">
+                                </header>
+                                <section class="article_text text_hidden" id="rubyProjects">
+                                    <div class="projects_box">
+                                        <!-- Ruby - Proj 1 ------------------- -->
+                                        <article class="proj_article">
+                                            <header class="proj_title_box proj_title_hover" id="showRubyOne">
+                                                <h4 class="proj_title">Proj Title</h4>
+                                                <img class="proj_arrow" id="rubyOneArrow" src="assets/icons/arrow_down_1a.png" alt="arrow down">
+                                            </header>
+                                            <section class="proj_content_box text_hidden" id="rubyOne">
+                                                <div class="proj_text">
+                                                    <h4 class="part_title">lalala</h4>
+                                                    <h5 class="part_sub_title">hohoho</h5>
+                                                    <p class="part_text"></p>
+                                                    <p class="part_text"></p>
+                                                    <p class="part_text"></p>
+                                                    <a class="site_link" href=""><p>open project</p></a>
+                                                </div> 
+                                            </section>
+                                            <!-- Hide Porject 1 ************************************* -->
+                                            <section class="hide_btn btn_hidden" id="hideRubyOne">
+                                                <img class="arrow" src="assets/icons/arrow_up_1c.png" alt="arrow up">
+                                                <h4 class="hide_title">hide</h4>
+                                            </section>
+                                        </article>
+                                    </div> 
+                                </section>
+                                <!-- Hide Porjects ************************************* -->
+                                <section class="hide_btn btn_hidden" id="hideRubyProjBtn">
+                                    <img class="arrow" src="assets/icons/arrow_up_1c.png" alt="arrow up">
+                                    <h4 class="hide_title">hide</h4>
+                                </section>
+                            </article>
+                        </section>
+                        <!-- Close Porjects ************************************* -->
+                        <footer class="close_box box_hidden" id="closeProjects">
+                            <div class="close_frame">
+                                <h4 class="close_title">close</h4>
+                                <img class="arrow" src="assets/icons/arrow_up_1c.png" alt="arrow up">
+                            </div>
+                        </footer>
+                    </article>
+
+                    <div class="open_space"></div>
+                <!------ VIDEO ------------------------------------------------------>
+                    <article class="info_box" id="videoInfoBox">
+                        <header class="title_box title_hover" id="openVideo">
+                            <h3 class="info_title">Video.</h3>
+                            <img class="arrow" id="videoArrow" src="assets/icons/arrow_down_1c.png" alt="arrow down">
+                        </header>
+                        <section class="info_text text_hidden" id="videoBox">
+                            <article class="info_article special_border">
+                                <section class="article_text">
+                                    <div class="text_box text_tv">
+                                        <div class="tv_box">
+                                            <video class="video_player" id="video" src="assets/video/Company.m4v" controls></video>
+                                        </div>
+                                        <div class="tv_subtext">
+                                            <p class="part_text">
+                                                Ullam distinctio in suscipit, molestias laudantium sed hic vero expedita maxime 
+                                                commodi nam magni non aspernatur cumque fugit, minus quod doloribus. Odio dolorem 
+                                                iusto corporis repudiandae ipsam reiciendis.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </section>
+                            </article>
+                        </section>
+                        <footer class="close_box box_hidden" id="closeVideo">
+                            <div class="close_frame">
+                                <h4 class="close_title">close</h4>
+                                <img class="arrow" src="assets/icons/arrow_up_1c.png" alt="arrow up">
+                            </div>
+                        </footer>
+                    </article>
+
+                    <div class="open_space"></div>
+                <!------ V-CARD ----------------------------------------------------->
+                    <article class="info_box" id="vcardInfoBox">
+                        <header class="title_box title_hover" id="openVCard">
+                            <h3 class="info_title">V-card</h3>
+                            <img class="arrow" id="v_cardArrow" src="assets/icons/arrow_down_1c.png" alt="arrow down">
+                        </header>
+                        <section class="info_text text_hidden" id="v_cardBox">
+                            <article class="info_article special_border">
+                                <section class="article_text">
+                                    <div class="vcard_content special">
+                                        <section class="vcard_section">
+                                            <header>
+                                                <h1>
+                                                    <span>&#9744;</span><span class="text">Web development</span>
+                                                    <span>&#9744;</span>
+                                                    <span class="text">Web design</span><span>&#9744;</span>
+                                                </h1>
+                                            </header>
+                                            <main>
+                                                <address>
+                                                    <div class="vcard">
+                                                        <span id="fn">Jeroen De Vos</span>
+                                                        <div class="org">Jeroen-editing</div>
+                                                        <a id="email" href="mailto:jdv.editing@gmail.com">
+                                                            jdv.editing@gmail.com
+                                                        </a>
+                                                        <div class="adr">
+                                                            <div class="street-address">Volkstraat 1</div>
+                                                            <span class="locality">Antwerp</span> -
+                                                            <span class="region">Antwerp</span>
+                                                            <span class="postal-code">2000</span> -
+                                                            <span class="country-name">BEL</span>
+                                                        </div>
+                                                    </div>
+                                                </address>
+                                            </main>
+                                            <footer>
+                                                <h2>
+                                                    <span>&#9744;</span><span class="text">Video editing</span>
+                                                    <span>&#9744;</span>
+                                                    <span class="text">Graphic design</span><span>&#9744;</span>
+                                                </h2>
+                                            </footer>
+                                        </section>
+                                        <section class="text_section">
+                                            <p class="part_text">
+                                                Ullam distinctio in suscipit, molestias laudantium sed hic vero expedita maxime 
+                                                commodi nam magni non aspernatur cumque fugit, minus quod doloribus. Odio dolorem 
+                                                iusto corporis repudiandae ipsam reiciendis.
+                                            </p>
+                                        </section>
+                                        
+                                    </div>
+                                </section>
+                            </article>
+                        </section>
+                        <footer class="close_box box_hidden" id="closeVCard">
+                            <div class="close_frame">
+                                <h4 class="close_title">close</h4>
+                                <img class="arrow" src="assets/icons/arrow_up_1c.png" alt="arrow up">
+                            </div>
+                        </footer>
+                    </article>
+                </div>
+            </section> 
+        </main>
+        <!------ ART BOX -------------------------------------------------->
+        <section class="performances_footer" id="artTwo">
+            <div class="quote_box">
+                <div class="quote_left">
+                        <div class="quote_title_box">
+                            <h3 class="quote_title">6 stages of debugging</h3>
+                        </div>
+                        <div class="quote_text_box">
+                            <ul class="left_col">
+                                <li class="left_row">
+                                    <p class="quote_number">1.</p>
+                                    <p class="quote_text">That can't happen.</p>
+                                </li>
+                                <li class="left_row">
+                                    <p class="quote_number">2.</p>
+                                    <p class="quote_text">That doesn't happen on my pc.</p>
+                                </li>
+                                <li class="left_row">
+                                    <p class="quote_number">3.</p>
+                                    <p class="quote_text">That shouldn't happen.</p>
+                                </li>
+                            </ul>
+                            <ul class="left_col">
+                                <li class="left_row">
+                                    <p class="quote_number">4.</p>
+                                    <p class="quote_text">Why does that happen?</p>
+                                </li>
+                                <li class="left_row">
+                                    <p class="quote_number">5.</p>
+                                    <p class="quote_text">Oh, I see!</p>
+                                </li>
+                                <li class="left_row">
+                                    <p class="quote_number">6.</p>
+                                    <p class="quote_text">How did that ever work?</p>
+                                </li>
+                            </ul>
+                        </div>
+                </div>
+                <div class="quote_right">
+                        <div class="quote_title_box">
+                            <img class="quote_title_icon" src="assets/icons/fire.png" alt="">
+                            <h3 class="quote_title">in case of fire</h3>
+                            <img class="quote_title_icon" src="assets/icons/fire.png" alt="">
+                        </div>
+                        <div class="quote_text_box">
+                            <ul class="right_col">
+                                <li class="right_row">
+                                    <p class="quote_number">1.</p>
+                                    <img class="quote_icon" src="assets/icons/add.png" alt="">
+                                    <p class="quote_text">git add .</p>
+                                </li>
+                                <li class="right_row">
+                                    <p class="quote_number">2.</p>
+                                    <img class="quote_icon" src="assets/icons/commit.png" alt="">
+                                    <p class="quote_text">git commit</p>
+                                </li>
+                            </ul>
+                            <ul class="right_col">
+                                <li class="right_row">
+                                    <p class="quote_number">3.</p>
+                                    <img class="quote_icon" src="assets/icons/push.png" alt="">
+                                    <p class="quote_text">git push</p>
+                                </li>
+                                <li class="right_row">
+                                    <p class="quote_number">4.</p>
+                                    <img class="quote_icon" src="assets/icons/exit.png" alt="">
+                                    <p class="quote_text">exit building</p>
+                                </li>
+                            </ul>
+                        </div>
+                </div>
+            </div>          
+        </section>
+    </div>
+
+<!------ FOOTER ----------------------------------------------------->
+    <footer class="page_footer">
+        <div class="rights_box">
+            <p><span>&#60;&#8725;&#62;</span>&nbsp;</p>
+            <p class="rights" id="date"></p>
+            <p>&nbsp;<span>&#60;&#8725;&#62;</span></p>
+        </div>
+        &nbsp;&nbsp;
+        <div class="location_box">
+            <p><span>&#60;&#8725;&#62;</span>&nbsp;</p>
+            <div class="aname_box">
+                <p class="name">Jeroen De Vos</p>
+            </div>
+            <p class="at">&nbsp;&#64;&nbsp;</p>
+            <div class="city_box">
+                <p class="city">Antwerp</p>
+            </div>
+            <p class="at">&nbsp;&#64;&nbsp;</p>
+            <div class="region_box">
+                <p class="region">Antwerp / Flanders</p>
+            </div>
+            <p class="at">&nbsp;&#64;&nbsp;</p>
+            <div class="country_box">
+                <p class="country">Belgium</p>      
+            </div>
+            <p>&nbsp;<span>&#60;&#8725;&#62;</span></p>
+        </div>
+    </footer>
+    
+    <script src="copyRights.js"></script>
+    <script src="projectsViews.js"></script>
+    
+</body>
+</html>

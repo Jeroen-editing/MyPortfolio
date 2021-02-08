@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J.D.V. - infopage</title>
+
+    <link rel="stylesheet" href="css/infoStylesheet.css">
+    <!--<link rel="stylesheet" href="css/responsiveness.css">-->
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Cream+Soda&family=Dosis:wght@200;300;400;500;600;700;800&family=KoHo:wght@200;300;400;500;600;700&family=Macondo&family=Port+Lligat+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!------ NAV -------------------------------------------------------->
+    <!------------------------------------------------------------------->
+    <nav class="navbar">
+        <a href="mailto:jdv.editing@gmail.com?subject=Saw your portfolio." class="nav_link gmail">
+            <img src="assets/icons/gmail.png" class="gmail_icon" alt="gmail logo">
+            <p>Contact me</p>
+        </a>
+        <a href="" class="nav_link codecamp">
+            <img src="assets/icons/fire_black.png" class="freeCodeCamp_icon" alt="freeCodeCamp logo">
+            <p>freeCodeCamp</p>
+        </a>
+        <a href="https://github.com/Jeroen-editing" class="nav_link github">
+            <img src="assets/icons/github_black.png" class="github_icon" alt="github logo">
+            <p>github</p>
+        </a>
+        <a href="https://www.linkedin.com/in/jeroen-de-vos-39258718b/" class="nav_link linkedin">
+            <img src="assets/icons/linkedin.png" alt="LinkedIn logo">
+            <p>LinkedIn</p>
+        </a>
+        <div class="dropdown_menu" id="dropdown">
+            <button class="menu_link menu" id="menuLink">
+                <img src="assets/icons/menu_green.png" class="menu_icon" alt="menu logo">
+                <p>Menu</p>
+                <img src="assets/icons/menu_green.png" class="menu_icon" alt="menu logo">
+            </button>
+            <div class="menu_btns btns_hidden" id="menu_btns">
+                <a href="index.html" class="menu_link home" id="homeLink" target="_blank">
+                    <img src="assets/icons/homepage_2.png" class="home_icon" alt="home logo">
+                    <p>Home</p>
+                </a>
+                <a href="projectpage.html" class="menu_link performances" id="performancesLink" target="_blank">
+                    <img src="assets/icons/develop_2.png" class="project_icon" alt="home logo">
+                    <p>Projects page</p>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="background">
+    <!------ TITLE ------------------------------------------------------>
+    <!------------------------------------------------------------------->
+        <header class="title_header">
+            <div class="title_flex">
+                <section class="title_section">
+                    <div class="name_box">
+                        <h1 class="name">Jeroen De Vos</h1>
+                    </div>
+                    <div class="image_box">
+                        <img src="assets/icons/coding_white.png" alt="">
+                    </div>
+                    <div class="page_box">
+                        <h2 class="pageTitle">Portfolio > Infopage</h2>
+                    </div>
+                </section>
+            </div>
+        </header>
+
+    <!------ MAIN ------------------------------------------------------->
+    <!------------------------------------------------------------------->
+        <main class="main_info">
+            <section class="personal_section" id="personal">
+                <div class="articles_box" id="msOneBox">
+                <!------ ABOUT ME --------------------------------------------------->
+                <!------------------------------------------------------------------->
+                    <article class="info_box" id="aboutInfoBox">
+                        <header class="title_box title_hover" id="openAbout">
+                            <h3 class="info_title">About me ...</h3>
+                            <img class="arrow" id="aboutArrow" src="assets/icons/arrow_down_1c.png" alt="arrow down">
+                        </header>
+                        <section class="info_text text_hidden" id="aboutBox">
+                            <article class="info_article about_article">
+                            <!------ About TEXT --------------------------------------------------->
+                                <section class="article_text">
+                                    <div class="text_box">
+                                        <p class="part_text">
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate officia magni, 
+                                            numquam quam rerum voluptas neque esse ipsam temporibus amet consequuntur quidem!
+                                        </p>
+                                        <p class="part_text">
+                                            Ullam distinctio in suscipit, molestias laudantium sed hic vero expedita maxime 
+                                            commodi nam magni non aspernatur cumque fugit, minus quod doloribus. Odio dolorem 
+                                            iusto corporis repudiandae ipsam reiciendis.
+                                        </p>
+                                    </div>
+                                </section>
+                            <!------ About QUOTES ----------------------------------------------->
+                                <section class="article_quote" id="aboutQuotes">
+                                    <aside class="quote_left">
+                                        <div class="quote_cartoon">
+                                            <img class="cartoon" src="assets/photos/internetOfThings2.jpg" alt="">
+                                        </div>
+                                    </aside>
+                                    <section class="quote_middle">
+                                        <h3 class="quote_title">Programmer</h3>
+                                        <h5 class="quote_subtitle">proh &#183; gram &#183; mer (n)</h5>
+                                        <p class="quote_text">
+                                            An organism capable of converting caffeine and pizza into code.
+                                        </p>
+                                    </section>
+                                    <aside class="quote_right">
+                                        <div class="quote_cartoon">
+                                            <img class="cartoon" src="assets/photos/codeIsFragile.png" alt="">
+                                        </div>
+                                    </aside>
+                                </section>
+                            </article>
+                        </section>
+                        <!------ Close About --------------------------------------------------->
+                        <footer class="close_box box_hidden"  id="closeAbout">
+                            <div class="close_frame">
+                                <h4 class="close_title">close</h4>
+                                <img class="arrow" src="assets/icons/arrow_up_1a.png" alt="arrow up">
+                            </div>
+                        </footer>         
+                    </article>
+                        
+                    <div class="open_space"></div>
+                <!------ EDUCATION -------------------------------------------------->
+                <!------------------------------------------------------------------->
+                    <article class="info_box"  id="educationInfoBox">
+                        <header class="title_box title_hover" id="openEducations">
+                            <h3 class="info_title">Education.</h3>
+                            <img class="arrow" id="educationArrow" src="assets/icons/arrow_down_1c.png" alt="arrow down">
+                        </header>
+                        <section class="info_text text_hidden" id="educationsBox">
+                        <!-- Education - 1 ************************************* -->
+                            <article class="info_article education_article">
+                                <header class="subtitle_box subtitle_hover" id="showWebBtn">
+                                    <h4 class="sub_title">Web development</h4>
+                                    <img class="arrow" id="webArrow" src="assets/icons/arrow_down_1a.png" alt="arrow down">
+                                </header>
+                            <!-- School - 1 ************************************* -->
+                                <section class="article_text text_hidden" id="becode">
+                                    <div class="text_box">
+                                        <h4 class="part_title">Becode - Antwerp</h4>
+                                        <h5 class="part_sub_title">Html, CSS (& Sass), Javascript, PHP, Apache, SQL, MySql, Symfony,...</h5>
+                                        <p class="part_text">
+                                            An intensive practical course, that mainly focuses on self-education, with life coaching. Offering exercices and 
+                                            (group) projects that lead you from simple Html to advanced Php. Learning to work with Linux command lines and to 
+                                            manage local servers and datbases.
+                                        </p>
+                                        <a class="site_link" href=""><p>go to there site</p></a>
+                                    </div>
+                                </section>
+                            <!-- Hide School ************************************* -->
+                                <section class="hide_btn btn_hidden" id="hideWebBtnOne">
+                                    <img class="arrow" src="assets/icons/arrow_up_1a.png" alt="arrow up">
+                                    <h4 class="hide_title">hide</h4>
+                                </section>
+                            <!-- School - 2 ************************************* -->
+                                <section class="article_text text_hidden" id="encora">
+                                    <div class="text_box">
+                                        <h4 class="part_title">ENCORA - Berchem (Antwerp)</h4>
+                                        <h5 class="part_sub_title">Javascript, PHP, SQL, MySql, Smarty, CSS & JavaScript animations.</h5>
+                                        <p class="part_text">
+                                            Evening classes. In the first year they start with basic Javascript, Php and Sql. Teaching to build a membership 
+                                            application with a database, login, password- and exception handeling, input, output,... And in the second year, 
+                                            they teach how to make javascript animations and -games. 
+                                        </p>
+                                        <a class="site_link" href=""><p>go to there site</p></a>
+                                    </div>
+                                </section>
+                            <!-- Hide School ************************************* -->
+                                <section class="hide_btn btn_hidden" id="hideWebBtnTwo">
+                                    <img class="arrow" src="assets/icons/arrow_up_1a.png" alt="arrow up">
+                                    <h4 class="hide_title">hide</h4>
+                                </section>
+                            </article>
+                        <!-- Education - 2 ************************************* -->
+                            <article class="info_article spec_margin">
+                                <header class="subtitle_box subtitle_hover" id="showScienceBtn">
+                                    <h4 class="sub_title select">Computer science</h4>
+                                    <img class="arrow" id="scienceArrow" src="assets/icons/arrow_down_1a.png" alt="arrow down">
+                                </header>
+                                <section class="article_text text_hidden" id="science">
+                                    <div class="text_box">
+                                        <h4 class="part_title">VDAB online courses</h4>
+                                        <h5 class="part_sub_title">Data analytics</h5>
+                                        <p class="part_text">
+                                            Which data, do you really need and which data is not important (for a program).
+                                            <br>To much data can be distractive and you need to see the essential tasks/data first.
+                                        </p>
+                                        <h5 class="part_sub_title">Programming logics</h5>
+                                        <p class="part_text">
+                                            Learnig to work with the basic programming structures.
+                                            <br>Operators, statements, loops,.. 
+                                        </p>
+                                        <a class="site_link" href=""><p>go to there site</p></a>
+                                    </div>
+                                </section>
+                            <!-- Hide School ************************************* -->
+                                <section class="hide_btn btn_hidden" id="hideScienceBtn">
+                                    <img class="arrow" src="assets/icons/arrow_up_1a.png" alt="arrow up">
+                                    <h4 class="hide_title">hide</h4>
+                                </section>
+                            </article>
+                        <!-- Education - 3 ************************************* -->
+                            <article class="info_article spec_margin">
+                                <header class="subtitle_box subtitle_hover" id="showFilmBtn">
+                                    <h4 class="sub_title">Film and video-art</h4>
+                                    <img class="arrow" id="filmArrow" src="assets/icons/arrow_down_1a.png" alt="arrow down">
+                                </header>
+                                <section class="article_text text_hidden" id="film">
+                                    <div class="text_box">
+                                        <h4 class="part_title">Royal Academy of Fine Arts - Antwerp.</h4>
+                                        <h5 class="part_sub_title">Video- and soundediting, camera- and light technics, special-effects and film history.</h5>
+                                        <p class="part_text">
+                                            Each year is divided in 50% theory and 50% practics, with 2 or 3 projects a year.
+                                            <br>Normaly you choose your main interest after the 3th year. But because I had experience in the field, I had an agreement 
+                                            with the lead teacher. So I could focus mainly on post-production (editing, graphics, special-effects,...).
+                                        </p>
+                                        <p class="part_text"></p>
+                                    </div>
+                                </section>
+                            <!-- Hide School ************************************* -->
+                                <section class="hide_btn btn_hidden" id="hideFilmBtn">
+                                    <img class="arrow" src="assets/icons/arrow_up_1a.png" alt="arrow up">
+                                    <h4 class="hide_title">hide</h4>
+                                </section>
+                            </article>
+                    
+                        <!-- Education - 4 ************************************* -->
+                            <article class="info_article spec_margin">
+                                <header class="subtitle_box subtitle_hover" id="showCadBtn">
+                                    <h4 class="sub_title">AutoCAD</h4>
+                                    <img class="arrow" id="cadArrow" src="assets/icons/arrow_down_1a.png" alt="arrow down">
+                                </header>
+                                <section class="article_text text_hidden" id="cad">       
+                                    <div class="text_box">
+                                        <h4 class="part_title">VDAB - Online course</h4>
+                                        <h5 class="part_sub_title">2D Building designs</h5>
+                                        <p class="part_text">
+                                            Just to see if I still knew the basics.
+                                        </p>
+                                        <p class="part_text">
+                                            They really did a good job with making it user friendly. In stead of some editing programs like final-cut pro, it still has all 
+                                            functionalities, but it bacame a lot easier to work with.
+                                        </p>
+                                        <a class="site_link" href=""><p>go to there site</p></a>
+                                    </div>
+                                </section>
+                            <!-- Hide School ************************************* -->
+                                <section class="hide_btn btn_hidden" id="hideCadBtn">
+                                    <img class="arrow" src="assets/icons/arrow_up_1a.png" alt="arrow up">
+                                    <h4 class="hide_title">hide</h4>
+                                </section>
+                            </article>
+                        <!-- Education - 5 ************************************* -->
+                            <article class="info_article">
+                                <header class="subtitle_box subtitle_hover" id="showArchitectBtn">
+                                    <h4 class="sub_title">Architecture - Graphic art & design</h4>
+                                    <img class="arrow" id="architectArrow" src="assets/icons/arrow_down_1a.png" alt="arrow down">
+                                </header>
+                                <section class="article_text text_hidden" id="architect">       
+                                    <div class="text_box">
+                                        <h4 class="part_title">Secondary Art School - Antwerp</h4>
+                                        <h5 class="part_sub_title">Preparatory education for architecture or graphic arts.</h5>
+                                        <p class="part_text">
+                                            With my creativity and interests in art and architecture it was a logic choice to go to art-shool. The most art classes we did together,
+                                            but in the Architecture-group we also had to do more math, chemestry and physics.
+                                        </p>
+                                        <a class="site_link" href=""><p>go to there site</p></a>
+                                    </div>
+                                </section>
+                            <!-- Hide School ************************************* -->
+                                <section class="hide_btn btn_hidden" id="hideArchitectBtn">
+                                    <img class="arrow" src="assets/icons/arrow_up_1a.png" alt="arrow up">
+                                    <h4 class="hide_title">hide</h4>
+                                </section>
+                            </article>
+                        </section>
+                    <!-- Close Education ************************************* -->
+                        <footer class="close_box box_hidden" id="closeEducations">
+                            <div class="close_frame">
+                                <h4 class="close_title">close</h4>
+                                <img class="arrow" src="assets/icons/arrow_up_1a.png" alt="arrow up">
+                            </div>
+                        </footer>
+                    </article>
+                        
+                    <div class="open_space"></div>
+                <!------ SKILLS ----------------------------------------------------->
+                <!------------------------------------------------------------------->
+                    <article class="info_box" id="skillsInfoBox">
+                        <header class="title_box title_hover" id="openSkills">
+                            <h3 class="info_title">Skills.</h3>
+                            <img class="arrow" id="skillsArrow" src="assets/icons/arrow_down_1c.png" alt="arrow down">
+                        </header>
+                        <section class="info_text text_hidden" id="skillsBox">
+                        <!-- SKILLS 1 *************************************************************** -->
+                            <article class="info_article skills_article skills_top">
+                            <!-- Skills - MENU 1 ************************************* -->
+                                <header class="skills_titles_box">
+                                    <div class="title_row">
+                                        <div class="title_column first_col" id="showHtmlCssBtn">
+                                            <h4 class="sub_title">Html & Css</h4>
+                                            <img class="arrow" id="htmlCssArrow" src="assets/icons/arrow_down_1c.png" alt="arrow down">
+                                        </div>
+                                        <div class="title_column spec_column" id="showWebdesignBtn">
+                                            <h4 class="sub_title">Web design</h4>
+                                            <img class="arrow" id="designArrow" src="assets/icons/arrow_down_1c.png" alt="arrow down">
+                                        </div>
+                                        <div class="title_column spec_column last_col" id="showScriptBtn">
+                                            <h4 class="sub_title">Javascript</h4>
+                                            <img class="arrow" id="scriptArrow" src="assets/icons/arrow_down_1c.png" alt="arrow down">
+                                        </div>
+                                    </div>
+                                </header>
+                            <!-- Skills - TEXT 1 ************************************* -->
+                                <section class="text_row row_hidden" id="htmlCss">
+                                    <div class="text_box">
+                                        <div class="part_icon">
+                                            <div class="icon_column">
+                                                <img src="assets/icons/html_icon.png" class="skill_icon" alt="">
+                                                <img src="assets/icons/css_icon.png" class="skill_icon" alt="">
+                                            </div>
+                                        </div>
+                                        <p class="part_text">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                </section>
+                            <!-- Skills - TEXT 2 ************************************* -->
+                                <section class="text_row row_hidden" id="webdesign">
+                                    <div class="text_box">
+                                        <div class="part_icon">
+                                            <img src="assets/icons/creativecloud_icon.png" class="skill_icon cc_icon" alt="">
+                                        </div>
+                                        <p class="part_text">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                            Alias vero perferendis, consequuntur dolores ratione quibusdam saepe cupiditate aliquid fugiat accusamus.
+                                        </p>
+                                    </div>
+                                </section>
+                            <!-- Skills - TEXT 3 ************************************* -->
+                                <section class="text_row row_hidden" id="javascript">
+                                    <div class="text_box">
+                                        <div class="part_icon">
+                                            <img src="assets/icons/javascript_icon.png" class="skill_icon" alt="">
+                                        </div>
+                                        <p class="part_text">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                            Sit qui hic beatae, repellendus deleniti placeat quas amet nulla ipsum cumque.
+                                        </p>
+                                    </div>
+                                </section>
+                            </article>
+                        <!-- SKILLS 2 *************************************************************** -->
+                            <article class="info_article skills_article skills_bottom">
+                            <!-- Skills - MENU 2 ************************************* -->
+                                <header class="skills_titles_box">
+                                    <div class="title_row">
+                                        <div class="title_column first_col" id="showFrameworksBtn">
+                                            <h4 class="sub_title">Frameworks</h4>
+                                            <img class="arrow" id="frameworksArrow" src="assets/icons/arrow_down_1c.png" alt="arrow down">
+                                        </div>
+                                        <div class="title_column spec_column" id="showDatabasesBtn">
+                                            <h4 class="sub_title">Databases</h4>
+                                            <img class="arrow" id="databasesArrow" src="assets/icons/arrow_down_1c.png" alt="arrow down">
+                                        </div>
+                                        <div class="title_column spec_column last_col" id="showEditingBtn">
+                                            <h4 class="sub_title">Editing</h4>
+                                            <img class="arrow" id="editingArrow" src="assets/icons/arrow_down_1c.png" alt="arrow down">
+                                        </div>
+                                    </div>
+                                </header>
+                            <!-- Skills - TEXT 4 ************************************* -->
+                                <section class="text_row row_hidden" id="frameworks">
+                                    <div class="text_box">
+                                        <div class="part_icon">
+                                            <div class="icon_column">
+                                                <img src="assets/icons/vue_icon.png" class="skill_icon vue_icon" alt="">
+                                                <img src="assets/icons/react_icon.png" class="skill_icon react_icon" alt="">
+                                            </div>
+                                        </div>    
+                                        <p class="part_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                            Sint sequi velit quo odio dolore vero ex soluta quidem consequuntur fugiat.
+                                        </p>
+                                    </div>
+                                </section>
+                            <!-- Skills - TEXT 5 ************************************* -->
+                                <section class="text_row row_hidden" id="databases">
+                                    <div class="text_box">
+                                        <div class="part_icon">
+                                            <div class="icon_column">
+                                                <img src="assets/icons/sql_icon.png" class="skill_icon sql_icon" alt="">
+                                                <img src="assets/icons/php_icon.png" class="skill_icon" alt="">
+                                            </div>
+                                        </div>
+                                        <p class="part_text">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                            Sint sequi velit quo odio dolore vero ex soluta quidem consequuntur fugiat.
+                                        </p>
+                                    </div>
+                                </section>
+                            <!-- Skills - TEXT 6 ************************************* -->
+                                <section class="text_row row_hidden" id="editing">
+                                    <div class="text_box">
+                                        <div class="part_icon">
+                                            <div class="icon_column">
+                                                <img src="assets/icons/fcp_icon.png" class="skill_icon fcp_icon" alt="">
+                                                <img src="assets/icons/prem_icon.png" class="skill_icon prem_icon" alt="">
+                                            </div>                                        
+                                        </div>
+                                        <p class="part_text">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                            Voluptate mollitia reprehenderit voluptatem cumque sit unde, sapiente ex sed ut praesentium!
+                                        </p>
+                                    </div>
+                                </section>
+                            </article>
+                        </section>
+                    <!-- Close Skills ************************************* -->
+                        <footer class="close_box box_hidden" id="closeSkills">
+                            <div class="close_frame">
+                                <h4 class="close_title">close</h4>
+                                <img class="arrow" src="assets/icons/arrow_up_1a.png" alt="arrow up">
+                            </div>
+                        </footer>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <!------ ART BOX -------------------------------------------------->
+        <!----------------------------------------------------------------->
+        <section class="personal_footer" id="artOne">
+            <div class="art_box">
+                <img class="eat_sleep" src="assets/photos/code_small_white.jpg" alt="">
+            </div>
+        </section>
+    </div>
+
+<!------ FOOTER ----------------------------------------------------->
+<!------------------------------------------------------------------->
+    <footer class="page_footer">
+        <div class="rights_box">
+            <p><span>&#60;&#8725;&#62;</span>&nbsp;</p>
+            <p class="rights" id="date"></p>
+            <p>&nbsp;<span>&#60;&#8725;&#62;</span></p>
+        </div>
+        &nbsp;&nbsp;
+        <div class="location_box">
+            <p><span>&#60;&#8725;&#62;</span>&nbsp;</p>
+            <div class="aname_box">
+                <p class="name">Jeroen De Vos</p>
+            </div>
+            <p class="at">&nbsp;&#64;&nbsp;</p>
+            <div class="city_box">
+                <p class="city">Antwerp</p>
+            </div>
+            <p class="at">&nbsp;&#64;&nbsp;</p>
+            <div class="region_box">
+                <p class="region">Antwerp / Flanders</p>
+            </div>
+            <p class="at">&nbsp;&#64;&nbsp;</p>
+            <div class="country_box">
+                <p class="country">Belgium</p>      
+            </div>
+            <p>&nbsp;<span>&#60;&#8725;&#62;</span></p>
+        </div>
+    </footer>
+    
+    <script src="copyRights.js"></script>
+    <script src="infoViews.js"></script>
+    
+</body>
+</html>

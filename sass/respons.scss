@@ -1,0 +1,56 @@
+@media (min-width: 660px) {
+
+    .pageTitle_box {
+        .white-space {
+            margin-top: 6%;
+        }
+    }
+}
+@media (min-width: 720px) {
+
+    .pageTitle_box {
+        .white-space {
+            margin-top: 7%;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+
+    .pageTitle_box {
+        .white-space {
+            margin-top: 8%;
+        }
+    }
+}
+
+@media (min-width: 800px) {
+
+    .pageTitle_box {
+        .white-space {
+            margin-top: 9%;
+        }
+    }
+    
+}
+
+@media (max-width: 960px) {
+
+    
+    .name {
+            font-size: 76px;
+        }
+        .functionTitle {
+            font-size: 200%;
+            letter-spacing: 3px;
+            word-spacing: 10px;
+            transform: scaleY(.8);
+        }
+
+    .pageTitle_box {
+        .white-space {
+            margin-top: 10%;
+        }
+    }
+    
+}
