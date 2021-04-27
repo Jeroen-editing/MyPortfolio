@@ -958,12 +958,12 @@ body {
 }
 .popup_textBox {
     padding: 1rem 0 .8rem 0;
-}
-.popup_text {
-    margin: 1rem 0 1.2rem 0;
-    line-height: 1.8rem;
 
-    span {
+    .popup_text {
+        margin: 1rem 0 1.2rem 0;
+        line-height: 1.8rem;
+    }
+    span, h6 {
         color: $orange;
     }
 }
@@ -1996,7 +1996,7 @@ body {
     }
 }
 .proj_margin {
-    margin-top: .8rem;
+    margin-top: .6rem;
 }
 
 //---- --> VIDEO BOX --------------------------------------

@@ -35,9 +35,12 @@ let projects = ["htmlCssOne", "jsOne", "fetchOne", "frameworksOne",
 let projects_arrows = ["htmlCssOneArrow", "jsOneArrow", "fetchOneArrow", "frameworksOneArrow", 
                 "serverOneArrow", "rubyOneArrow", "phytonOneArrow"];
 
-let htmlCss_projects = ["htmlCssOne", "htmlCssTwo"];
-let htmlCss_arrows = ["htmlCssOneArrow", "htmlCssTwoArrow"];
-let hide_htmlCss_arrows = ["htmlCssOneHideArrow", "htmlCssTwoHideArrow"];
+let htmlCss_projects = ["htmlCssOne", "htmlCssTwo", "htmlCssThree", "htmlCssFour", "htmlCssFive",
+                        "htmlCssSix", "htmlCssSeven", "htmlCssEight", "htmlCssNine", "htmlCssTen"];
+let htmlCss_arrows = ["htmlCssOneArrow", "htmlCssTwoArrow", "htmlCssThreeArrow", "htmlCssFourArrow", "htmlCssFiveArrow", 
+                    "htmlCssSixArrow", "htmlCssSevenArrow", "htmlCssEightArrow", "htmlCssNineArrow", "htmlCssTenArrow"];
+let hide_htmlCss_arrows = ["htmlCssOneHideArrow", "htmlCssTwoHideArrow", "htmlCssThreeHideArrow", "htmlCssFourHideArrow", "htmlCssFiveHideArrow",
+                    "htmlCssSixHideArrow", "htmlCssSevenHideArrow", "htmlCssEightHideArrow", "htmlCssNineHideArrow", "htmlCssTenHideArrow"];
 
 let js_projects = ["jsOne", "jsTwo", "jsThree"];
 let js_arrows = ["jsOneArrow", "jsTwoArrow", "jsThreeArrow"];
@@ -258,6 +261,14 @@ const switchProjArrowUp = (btn, arrow) => {
 //**************** PERSONAL SECTION *****************************************************
 
 //================ EDUCATION ARTICLE ===========================================
+
+const closeEducations = () => {
+    hideSection(educations[0], hide_web_btn, show_web_btn, les_arrows[0]);
+    hideSection(educations[1], hide_science_btn, show_science_btn, les_arrows[1]);
+    hideSection(educations[2], hide_film_btn, show_film_btn, les_arrows[2]);
+    hideSection(educations[3], hide_cad_btn, show_cad_btn, les_arrows[3]);
+    hideSection(educations[4], hide_architect_btn, show_architect_btn, les_arrows[4]);
+}
 //---------------- web developer --------------------------------------
 let show_web_btn = getById("showWebBtn");
 let hide_web_btn = getById("hideWebBtn");
@@ -265,12 +276,15 @@ let hide_web_btn = getById("hideWebBtn");
 switchArrowDown(show_web_btn, les_arrows[0]);
 switchArrowUp(hide_web_btn, hide_les_arrows[0]);
   
-show_web_btn.addEventListener('click', () => {     
+show_web_btn.addEventListener('click', () => {
+    closeEducations();    
     showSection(educations[0], hide_web_btn, show_web_btn, les_arrows[0]);
+    /*
     hideSection(educations[1], hide_science_btn, show_science_btn, les_arrows[1]);
     hideSection(educations[2], hide_film_btn, show_film_btn, les_arrows[2]);
     hideSection(educations[3], hide_cad_btn, show_cad_btn, les_arrows[3]);
     hideSection(educations[4], hide_architect_btn, show_architect_btn, les_arrows[4]);
+    */
 });
 hide_web_btn.addEventListener('click', () => {
     hideSection(educations[0], hide_web_btn, show_web_btn, les_arrows[0]);
@@ -284,11 +298,14 @@ switchArrowDown(show_science_btn, les_arrows[1]);
 switchArrowUp(hide_science_btn, hide_les_arrows[1]);
 
 show_science_btn.addEventListener('click', () => {
+    closeEducations(); 
     showSection(educations[1], hide_science_btn, show_science_btn, les_arrows[1]);
+    /*
     hideSection(educations[0], hide_web_btn, show_web_btn, les_arrows[0]);
     hideSection(educations[2], hide_film_btn, show_film_btn, les_arrows[2]);
     hideSection(educations[3], hide_cad_btn, show_cad_btn, les_arrows[3]);
     hideSection(educations[4], hide_architect_btn, show_architect_btn, les_arrows[4]);
+    */
 });
 hide_science_btn.addEventListener('click', () => {
     hideSection(educations[1], hide_science_btn, show_science_btn, les_arrows[1]);
@@ -302,11 +319,14 @@ switchArrowDown(show_film_btn, les_arrows[2]);
 switchArrowUp(hide_film_btn, hide_les_arrows[2]);
 
 show_film_btn.addEventListener('click', () => {
+    closeEducations(); 
     showSection(educations[2], hide_film_btn, show_film_btn, les_arrows[2]);
+    /*
     hideSection(educations[0], hide_web_btn, show_web_btn, les_arrows[0]);
     hideSection(educations[1], hide_science_btn, show_science_btn, les_arrows[1]);
     hideSection(educations[3], hide_cad_btn, show_cad_btn, les_arrows[3]);
     hideSection(educations[4], hide_architect_btn, show_architect_btn, les_arrows[4]);
+    */
 });
 hide_film_btn.addEventListener('click', () => {
     hideSection(educations[2], hide_film_btn, show_film_btn, les_arrows[2]);
@@ -320,11 +340,14 @@ switchArrowDown(show_cad_btn, les_arrows[3]);
 switchArrowUp(hide_cad_btn, hide_les_arrows[3]);
 
 show_cad_btn.addEventListener('click', () => {
+    closeEducations(); 
     showSection(educations[3], hide_cad_btn, show_cad_btn, les_arrows[3]);
+    /*
     hideSection(educations[0], hide_web_btn, show_web_btn, les_arrows[0]);
     hideSection(educations[1], hide_science_btn, show_science_btn, les_arrows[1]);
     hideSection(educations[2], hide_film_btn, show_film_btn, les_arrows[2]);
     hideSection(educations[4], hide_architect_btn, show_architect_btn, les_arrows[4]);
+    */
 });
 
 hide_cad_btn.addEventListener('click', () => {
@@ -339,11 +362,14 @@ switchArrowDown(show_architect_btn, les_arrows[4]);
 switchArrowUp(hide_architect_btn, hide_les_arrows[4]);
 
 show_architect_btn.addEventListener('click', () => {
+    closeEducations(); 
     showSection(educations[4], hide_architect_btn, show_architect_btn, les_arrows[4]);
+    /*
     hideSection(educations[0], hide_web_btn, show_web_btn, les_arrows[0]);
     hideSection(educations[1], hide_science_btn, show_science_btn, les_arrows[1]);
     hideSection(educations[2], hide_film_btn, show_film_btn, les_arrows[2]);
     hideSection(educations[3], hide_cad_btn, show_cad_btn, les_arrows[3]);
+    */
 });
 hide_architect_btn.addEventListener('click', () => {
     hideSection(educations[4], hide_architect_btn, show_architect_btn, les_arrows[4]);
@@ -443,16 +469,27 @@ show_design_skills.addEventListener('click', showDesignSkills);
 const showProject = (project, hide_proj, show_proj, arrow) => {
     getById(project).classList.replace("proj_hidden", "proj_visible");
     hide_proj.classList.replace("btn_hidden", "btn_visible");
-    show_proj.style.background = "url(./assets/backgrounds/bg_03.jpg)";
+    show_proj.style.background = "url(./assets/backgrounds/bg_03_green.jpg)";
+    hide_proj.style.background = "url(./assets/backgrounds/bg_03_green.jpg)";
     show_proj.classList.remove("proj_title_hover");
     getById(arrow).style.opacity = "0";
 }
 const hideProject = (project, hide_proj, show_proj, arrow) => {
     getById(project).classList.replace("proj_visible", "proj_hidden");
     hide_proj.classList.replace("btn_visible", "btn_hidden");
-    show_proj.style.background = "url(./assets/backgrounds/bg_03_green.jpg)";
+    show_proj.style.background = "url(./assets/backgrounds/bg_03.jpg)";
     show_proj.classList.add("proj_title_hover");
     getById(arrow).style.opacity = "1";
+}
+
+const closeProjectGroups = () => {
+    hideSection(proj_groups[0], hide_htmlCss_btn, show_htmlCss_btn, proj_groups_arrows[0]);
+    hideSection(proj_groups[1], hide_Js_btn, show_Js_btn, projects_arrows[1]);
+    hideSection(proj_groups[2], hide_Fetch_btn, show_Fetch_btn, proj_groups_arrows[2]);
+    hideSection(proj_groups[3], hide_Frameworks_btn, show_Frameworks_btn, proj_groups_arrows[3]);
+    hideSection(proj_groups[4], hide_Server_btn, show_Server_btn, proj_groups_arrows[4]);
+    hideSection(proj_groups[5], hide_Ruby_btn, show_Ruby_btn, proj_groups_arrows[5]);
+    hideSection(proj_groups[6], hide_Phyton_btn, show_Phyton_btn, proj_groups_arrows[6]);
 }
 
 //---------------- HTML&CSS projects --------------------------------
@@ -463,17 +500,33 @@ switchArrowDown(show_htmlCss_btn, proj_groups_arrows[0]);
 switchArrowUp(hide_htmlCss_btn, hide_proj_groups_arrows[0]);
 
 show_htmlCss_btn.addEventListener('click', () => {
+    closeProjectGroups();
     showSection(proj_groups[0], hide_htmlCss_btn, show_htmlCss_btn, proj_groups_arrows[0]);
+    /*
     hideSection(proj_groups[1], hide_Js_btn, show_Js_btn, projects_arrows[1]);
     hideSection(proj_groups[2], hide_Fetch_btn, show_Fetch_btn, proj_groups_arrows[2]);
     hideSection(proj_groups[3], hide_Frameworks_btn, show_Frameworks_btn, proj_groups_arrows[3]);
     hideSection(proj_groups[4], hide_Server_btn, show_Server_btn, proj_groups_arrows[4]);
     hideSection(proj_groups[5], hide_Ruby_btn, show_Ruby_btn, proj_groups_arrows[5]);
     hideSection(proj_groups[6], hide_Phyton_btn, show_Phyton_btn, proj_groups_arrows[6]);
+    */
 });
 hide_htmlCss_btn.addEventListener('click', () => {
     hideSection(proj_groups[0], hide_htmlCss_btn, show_htmlCss_btn, proj_groups_arrows[0]);
 });
+        
+        const closeOtherProjects = () => {
+            hideProject(htmlCss_projects[0], hide_htmlCss_one, show_htmlCss_one, htmlCss_arrows[0]);
+            hideProject(htmlCss_projects[1], hide_htmlCss_two, show_htmlCss_two, htmlCss_arrows[1]);
+            hideProject(htmlCss_projects[2], hide_htmlCss_three, show_htmlCss_three, htmlCss_arrows[2]);
+            hideProject(htmlCss_projects[3], hide_htmlCss_four, show_htmlCss_four, htmlCss_arrows[3]);
+            hideProject(htmlCss_projects[4], hide_htmlCss_five, show_htmlCss_five, htmlCss_arrows[4]);
+            hideProject(htmlCss_projects[5], hide_htmlCss_six, show_htmlCss_six, htmlCss_arrows[5]);
+            hideProject(htmlCss_projects[6], hide_htmlCss_seven, show_htmlCss_seven, htmlCss_arrows[6]);
+            hideProject(htmlCss_projects[7], hide_htmlCss_eight, show_htmlCss_eight, htmlCss_arrows[7]);
+            hideProject(htmlCss_projects[8], hide_htmlCss_nine, show_htmlCss_nine, htmlCss_arrows[8]);
+            hideProject(htmlCss_projects[9], hide_htmlCss_ten, show_htmlCss_ten, htmlCss_arrows[9]);
+        }
 
         //---------------- Html Css 1 ---------------- //
         let show_htmlCss_one = getById("showHtmlCssOne");
@@ -483,8 +536,8 @@ hide_htmlCss_btn.addEventListener('click', () => {
         switchProjArrowUp(hide_htmlCss_one, hide_htmlCss_arrows[0]);
 
         show_htmlCss_one.addEventListener('click', () => {
+            closeOtherProjects();
             showProject(htmlCss_projects[0], hide_htmlCss_one, show_htmlCss_one, htmlCss_arrows[0]);
-            hideProject(htmlCss_projects[1], hide_htmlCss_two, show_htmlCss_two, htmlCss_arrows[1]);
             //show_htmlCss_one.classList.remove("proj_title_hover");
         });
         hide_htmlCss_one.addEventListener('click', () => {
@@ -500,12 +553,148 @@ hide_htmlCss_btn.addEventListener('click', () => {
         switchProjArrowUp(hide_htmlCss_two, hide_htmlCss_arrows[1]);
 
         show_htmlCss_two.addEventListener('click', () => {
+            closeOtherProjects();
             showProject(htmlCss_projects[1], hide_htmlCss_two, show_htmlCss_two, htmlCss_arrows[1]);
-            hideProject(htmlCss_projects[0], hide_htmlCss_one, show_htmlCss_one, htmlCss_arrows[0]);
             //show_htmlCss_two.classList.remove("proj_title_hover");
         });
         hide_htmlCss_two.addEventListener('click', () => {
             hideProject(htmlCss_projects[1], hide_htmlCss_two, show_htmlCss_two, htmlCss_arrows[1]);
+            //show_htmlCss_two.classList.add("proj_title_hover");
+        });
+
+        //---------------- Html Css 3 ---------------- //
+        let show_htmlCss_three = getById("showHtmlCssThree");
+        let hide_htmlCss_three = getById("hideHtmlCssThree");
+
+        switchProjArrowDown(show_htmlCss_three, htmlCss_arrows[2]);
+        switchProjArrowUp(hide_htmlCss_three, hide_htmlCss_arrows[2]);
+
+        show_htmlCss_three.addEventListener('click', () => {
+            closeOtherProjects();
+            showProject(htmlCss_projects[2], hide_htmlCss_three, show_htmlCss_three, htmlCss_arrows[2]);
+            //show_htmlCss_one.classList.remove("proj_title_hover");
+        });
+        hide_htmlCss_three.addEventListener('click', () => {
+            hideProject(htmlCss_projects[2], hide_htmlCss_three, show_htmlCss_three, htmlCss_arrows[2]);
+            //show_htmlCss_one.classList.add("proj_title_hover");
+        });
+
+        //---------------- Html Css 4 ---------------- //
+        let show_htmlCss_four = getById("showHtmlCssFour");
+        let hide_htmlCss_four = getById("hideHtmlCssFour");
+
+        switchProjArrowDown(show_htmlCss_four, htmlCss_arrows[3]);
+        switchProjArrowUp(hide_htmlCss_four, hide_htmlCss_arrows[3]);
+
+        show_htmlCss_four.addEventListener('click', () => {
+            closeOtherProjects();
+            showProject(htmlCss_projects[3], hide_htmlCss_four, show_htmlCss_four, htmlCss_arrows[3]);
+            //show_htmlCss_two.classList.remove("proj_title_hover");
+        });
+        hide_htmlCss_four.addEventListener('click', () => {
+            hideProject(htmlCss_projects[3], hide_htmlCss_four, show_htmlCss_four, htmlCss_arrows[3]);
+            //show_htmlCss_two.classList.add("proj_title_hover");
+        });
+
+        //---------------- Html Css 5 ---------------- //
+        let show_htmlCss_five = getById("showHtmlCssFive");
+        let hide_htmlCss_five = getById("hideHtmlCssFive");
+
+        switchProjArrowDown(show_htmlCss_five, htmlCss_arrows[4]);
+        switchProjArrowUp(hide_htmlCss_five, hide_htmlCss_arrows[4]);
+
+        show_htmlCss_five.addEventListener('click', () => {
+            closeOtherProjects();
+            showProject(htmlCss_projects[4], hide_htmlCss_five, show_htmlCss_five, htmlCss_arrows[4]);
+            //show_htmlCss_one.classList.remove("proj_title_hover");
+        });
+        hide_htmlCss_five.addEventListener('click', () => {
+            hideProject(htmlCss_projects[4], hide_htmlCss_five, show_htmlCss_five, htmlCss_arrows[4]);
+            //show_htmlCss_one.classList.add("proj_title_hover");
+        });
+
+        //---------------- Html Css 6 ---------------- //
+        let show_htmlCss_six = getById("showHtmlCssSix");
+        let hide_htmlCss_six = getById("hideHtmlCssSix");
+
+        switchProjArrowDown(show_htmlCss_six, htmlCss_arrows[5]);
+        switchProjArrowUp(hide_htmlCss_six, hide_htmlCss_arrows[5]);
+
+        show_htmlCss_six.addEventListener('click', () => {
+            closeOtherProjects();
+            showProject(htmlCss_projects[5], hide_htmlCss_six, show_htmlCss_six, htmlCss_arrows[5]);
+            //show_htmlCss_two.classList.remove("proj_title_hover");
+        });
+        hide_htmlCss_six.addEventListener('click', () => {
+            hideProject(htmlCss_projects[5], hide_htmlCss_six, show_htmlCss_six, htmlCss_arrows[5]);
+            //show_htmlCss_two.classList.add("proj_title_hover");
+        });
+
+        //---------------- Html Css 7 ---------------- //
+        let show_htmlCss_seven = getById("showHtmlCssSeven");
+        let hide_htmlCss_seven = getById("hideHtmlCssSeven");
+
+        switchProjArrowDown(show_htmlCss_seven, htmlCss_arrows[6]);
+        switchProjArrowUp(hide_htmlCss_seven, hide_htmlCss_arrows[6]);
+
+        show_htmlCss_seven.addEventListener('click', () => {
+            closeOtherProjects();
+            showProject(htmlCss_projects[6], hide_htmlCss_seven, show_htmlCss_seven, htmlCss_arrows[6]);
+            //show_htmlCss_one.classList.remove("proj_title_hover");
+        });
+        hide_htmlCss_seven.addEventListener('click', () => {
+            hideProject(htmlCss_projects[6], hide_htmlCss_seven, show_htmlCss_seven, htmlCss_arrows[6]);
+            //show_htmlCss_one.classList.add("proj_title_hover");
+        });
+
+        //---------------- Html Css 8 ---------------- //
+        let show_htmlCss_eight = getById("showHtmlCssEight");
+        let hide_htmlCss_eight = getById("hideHtmlCssEight");
+
+        switchProjArrowDown(show_htmlCss_eight, htmlCss_arrows[7]);
+        switchProjArrowUp(hide_htmlCss_eight, hide_htmlCss_arrows[7]);
+
+        show_htmlCss_eight.addEventListener('click', () => {
+            closeOtherProjects();
+            showProject(htmlCss_projects[7], hide_htmlCss_eight, show_htmlCss_eight, htmlCss_arrows[7]);
+            //show_htmlCss_two.classList.remove("proj_title_hover");
+        });
+        hide_htmlCss_eight.addEventListener('click', () => {
+            hideProject(htmlCss_projects[7], hide_htmlCss_eight, show_htmlCss_eight, htmlCss_arrows[7]);
+            //show_htmlCss_two.classList.add("proj_title_hover");
+        });
+
+        //---------------- Html Css 9 ---------------- //
+        let show_htmlCss_nine = getById("showHtmlCssNine");
+        let hide_htmlCss_nine = getById("hideHtmlCssNine");
+
+        switchProjArrowDown(show_htmlCss_nine, htmlCss_arrows[8]);
+        switchProjArrowUp(hide_htmlCss_nine, hide_htmlCss_arrows[8]);
+
+        show_htmlCss_nine.addEventListener('click', () => {
+            closeOtherProjects();
+            showProject(htmlCss_projects[8], hide_htmlCss_nine, show_htmlCss_nine, htmlCss_arrows[8]);
+            //show_htmlCss_one.classList.remove("proj_title_hover");
+        });
+        hide_htmlCss_nine.addEventListener('click', () => {
+            hideProject(htmlCss_projects[8], hide_htmlCss_nine, show_htmlCss_nine, htmlCss_arrows[8]);
+            //show_htmlCss_one.classList.add("proj_title_hover");
+        });
+
+        //---------------- Html Css 10 ---------------- //
+        let show_htmlCss_ten = getById("showHtmlCssTen");
+        let hide_htmlCss_ten = getById("hideHtmlCssTen");
+
+        switchProjArrowDown(show_htmlCss_ten, htmlCss_arrows[9]);
+        switchProjArrowUp(hide_htmlCss_ten, hide_htmlCss_arrows[9]);
+
+        show_htmlCss_ten.addEventListener('click', () => {
+            closeOtherProjects();
+            showProject(htmlCss_projects[9], hide_htmlCss_ten, show_htmlCss_ten, htmlCss_arrows[9]);
+            //show_htmlCss_two.classList.remove("proj_title_hover");
+        });
+        hide_htmlCss_ten.addEventListener('click', () => {
+            hideProject(htmlCss_projects[9], hide_htmlCss_ten, show_htmlCss_ten, htmlCss_arrows[9]);
             //show_htmlCss_two.classList.add("proj_title_hover");
         });
 
@@ -517,13 +706,16 @@ switchArrowDown(show_Js_btn, proj_groups_arrows[1]);
 switchArrowUp(hide_Js_btn, hide_proj_groups_arrows[1]);
 
 show_Js_btn.addEventListener('click', () => {
+    closeProjectGroups();
     showSection(proj_groups[1], hide_Js_btn, show_Js_btn, proj_groups_arrows[1]);
+    /*
     hideSection(proj_groups[0], hide_htmlCss_btn, show_htmlCss_btn, proj_groups_arrows[0]);
     hideSection(proj_groups[2], hide_Fetch_btn, show_Fetch_btn, proj_groups_arrows[2]);
     hideSection(proj_groups[3], hide_Frameworks_btn, show_Frameworks_btn, proj_groups_arrows[3]);
     hideSection(proj_groups[4], hide_Server_btn, show_Server_btn, proj_groups_arrows[4]);
     hideSection(proj_groups[5], hide_Ruby_btn, show_Ruby_btn, proj_groups_arrows[5]);
     hideSection(proj_groups[6], hide_Phyton_btn, show_Phyton_btn, proj_groups_arrows[6]);
+    */
 });
 hide_Js_btn.addEventListener('click', () => {
     hideSection(proj_groups[1], hide_Js_btn, show_Js_btn, proj_groups_arrows[1]);
@@ -591,13 +783,16 @@ switchArrowDown(show_Fetch_btn, proj_groups_arrows[2]);
 switchArrowUp(hide_Fetch_btn, hide_proj_groups_arrows[2]);
 
 show_Fetch_btn.addEventListener('click', () => {
+    closeProjectGroups();
     showSection(proj_groups[2], hide_Fetch_btn, show_Fetch_btn, proj_groups_arrows[2]);
+    /*
     hideSection(proj_groups[0], hide_htmlCss_btn, show_htmlCss_btn, proj_groups_arrows[0]);
     hideSection(proj_groups[1], hide_Js_btn, show_Js_btn, projects_arrows[1]);
     hideSection(proj_groups[3], hide_Frameworks_btn, show_Frameworks_btn, proj_groups_arrows[3]);
     hideSection(proj_groups[4], hide_Server_btn, show_Server_btn, proj_groups_arrows[4]);
     hideSection(proj_groups[5], hide_Ruby_btn, show_Ruby_btn, proj_groups_arrows[5]);
     hideSection(proj_groups[6], hide_Phyton_btn, show_Phyton_btn, proj_groups_arrows[6]);
+    */
 });
 hide_Fetch_btn.addEventListener('click', () => {
     hideSection(proj_groups[2], hide_Fetch_btn, show_Fetch_btn, proj_groups_arrows[2]);
@@ -665,13 +860,16 @@ switchArrowDown(show_Frameworks_btn, proj_groups_arrows[3]);
 switchArrowUp(hide_Frameworks_btn, hide_proj_groups_arrows[3]);
 
 show_Frameworks_btn.addEventListener('click', () => {
+    closeProjectGroups();
     showSection(proj_groups[3], hide_Frameworks_btn, show_Frameworks_btn, proj_groups_arrows[3]);
+    /*
     hideSection(proj_groups[0], hide_htmlCss_btn, show_htmlCss_btn, proj_groups_arrows[0]);
     hideSection(proj_groups[1], hide_Js_btn, show_Js_btn, projects_arrows[1]);
     hideSection(proj_groups[2], hide_Fetch_btn, show_Fetch_btn, proj_groups_arrows[2]);
     hideSection(proj_groups[4], hide_Server_btn, show_Server_btn, proj_groups_arrows[4]);
     hideSection(proj_groups[5], hide_Ruby_btn, show_Ruby_btn, proj_groups_arrows[5]);
     hideSection(proj_groups[6], hide_Phyton_btn, show_Phyton_btn, proj_groups_arrows[6]);
+    */
 });
 hide_Frameworks_btn.addEventListener('click', () => {
     hideSection(proj_groups[3], hide_Frameworks_btn, show_Frameworks_btn, proj_groups_arrows[3]);
@@ -701,13 +899,16 @@ switchArrowDown(show_Server_btn, proj_groups_arrows[4]);
 switchArrowUp(hide_Server_btn, hide_proj_groups_arrows[4]);
 
 show_Server_btn.addEventListener('click', () => {
+    closeProjectGroups();
     showSection(proj_groups[4], hide_Server_btn, show_Server_btn, proj_groups_arrows[4]);
+    /*
     hideSection(proj_groups[0], hide_htmlCss_btn, show_htmlCss_btn, proj_groups_arrows[0]);
     hideSection(proj_groups[1], hide_Js_btn, show_Js_btn, projects_arrows[1]);
     hideSection(proj_groups[2], hide_Fetch_btn, show_Fetch_btn, proj_groups_arrows[2]);
     hideSection(proj_groups[3], hide_Frameworks_btn, show_Frameworks_btn, proj_groups_arrows[3]);
     hideSection(proj_groups[5], hide_Ruby_btn, show_Ruby_btn, proj_groups_arrows[5]);
     hideSection(proj_groups[6], hide_Phyton_btn, show_Phyton_btn, proj_groups_arrows[6]);
+    */
 });
 hide_Server_btn.addEventListener('click', () => {
     hideSection(proj_groups[4], hide_Server_btn, show_Server_btn, proj_groups_arrows[4]);
@@ -734,13 +935,16 @@ switchArrowDown(show_Ruby_btn, proj_groups_arrows[5]);
 switchArrowUp(hide_Ruby_btn, hide_proj_groups_arrows[5]);
 
 show_Ruby_btn.addEventListener('click', () => {
+    closeProjectGroups();
     showSection(proj_groups[5], hide_Ruby_btn, show_Ruby_btn, proj_groups_arrows[5]);
+    /*
     hideSection(proj_groups[0], hide_htmlCss_btn, show_htmlCss_btn, proj_groups_arrows[0]);
     hideSection(proj_groups[1], hide_Js_btn, show_Js_btn, projects_arrows[1]);
     hideSection(proj_groups[2], hide_Fetch_btn, show_Fetch_btn, proj_groups_arrows[2]);
     hideSection(proj_groups[3], hide_Frameworks_btn, show_Frameworks_btn, proj_groups_arrows[3]);
     hideSection(proj_groups[4], hide_Server_btn, show_Server_btn, proj_groups_arrows[4]);
     hideSection(proj_groups[6], hide_Phyton_btn, show_Phyton_btn, proj_groups_arrows[6]);
+    */
 });
 hide_Ruby_btn.addEventListener('click', () => {
     hideSection(proj_groups[5], hide_Ruby_btn, show_Ruby_btn, proj_groups_arrows[5]);
@@ -767,13 +971,16 @@ switchArrowDown(show_Phyton_btn, proj_groups_arrows[6]);
 switchArrowUp(hide_Phyton_btn, hide_proj_groups_arrows[6]);
 
 show_Phyton_btn.addEventListener('click', () => {
+    closeProjectGroups();
     showSection(proj_groups[6], hide_Phyton_btn, show_Phyton_btn, proj_groups_arrows[6]);
+    /*
     hideSection(proj_groups[0], hide_htmlCss_btn, show_htmlCss_btn, proj_groups_arrows[0]);
     hideSection(proj_groups[1], hide_Js_btn, show_Js_btn, projects_arrows[1]);
     hideSection(proj_groups[2], hide_Fetch_btn, show_Fetch_btn, proj_groups_arrows[2]);
     hideSection(proj_groups[3], hide_Frameworks_btn, show_Frameworks_btn, proj_groups_arrows[3]);
     hideSection(proj_groups[4], hide_Server_btn, show_Server_btn, proj_groups_arrows[4]);
     hideSection(proj_groups[5], hide_Ruby_btn, show_Ruby_btn, proj_groups_arrows[5]);
+    */
 });
 hide_Phyton_btn.addEventListener('click', () => {
     hideSection(proj_groups[6], hide_Phyton_btn, show_Phyton_btn, proj_groups_arrows[6]);
