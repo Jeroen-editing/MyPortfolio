@@ -514,7 +514,7 @@ show_htmlCss_btn.addEventListener('click', () => {
 hide_htmlCss_btn.addEventListener('click', () => {
     hideSection(proj_groups[0], hide_htmlCss_btn, show_htmlCss_btn, proj_groups_arrows[0]);
 });
-        
+        /*
         const closeOtherProjects = () => {
             hideProject(htmlCss_projects[0], hide_htmlCss_one, show_htmlCss_one, htmlCss_arrows[0]);
             hideProject(htmlCss_projects[1], hide_htmlCss_two, show_htmlCss_two, htmlCss_arrows[1]);
@@ -697,7 +697,7 @@ hide_htmlCss_btn.addEventListener('click', () => {
             hideProject(htmlCss_projects[9], hide_htmlCss_ten, show_htmlCss_ten, htmlCss_arrows[9]);
             //show_htmlCss_two.classList.add("proj_title_hover");
         });
-
+*/
 //---------------- JavaScript projects --------------------------------
 let show_Js_btn = getById("showJsProjBtn");
 let hide_Js_btn = getById("hideJsProjBtn");
@@ -717,10 +717,11 @@ show_Js_btn.addEventListener('click', () => {
     hideSection(proj_groups[6], hide_Phyton_btn, show_Phyton_btn, proj_groups_arrows[6]);
     */
 });
+
 hide_Js_btn.addEventListener('click', () => {
     hideSection(proj_groups[1], hide_Js_btn, show_Js_btn, proj_groups_arrows[1]);
 });
-
+        /*
         //----------------- JavaScript 1 ---------------- //
         let show_Js_one = getById("showJsOne");
         let hide_Js_one = getById("hideJsOne");
@@ -774,6 +775,7 @@ hide_Js_btn.addEventListener('click', () => {
             hideProject(js_projects[2], hide_Js_three, show_Js_three, js_arrows[2]);
             //show_Js_three.classList.add("proj_title_hover");
         });
+        */
 
 //---------------- Fetch projects --------------------------------
 let show_Fetch_btn = getById("showFetchProjBtn");
@@ -797,7 +799,7 @@ show_Fetch_btn.addEventListener('click', () => {
 hide_Fetch_btn.addEventListener('click', () => {
     hideSection(proj_groups[2], hide_Fetch_btn, show_Fetch_btn, proj_groups_arrows[2]);
 });
-
+        /*
         //---------------- Fetch API 1 ---------------- //
         let show_Fetch_one = getById("showFetchOne");
         let hide_Fetch_one = getById("hideFetchOne");
@@ -851,6 +853,7 @@ hide_Fetch_btn.addEventListener('click', () => {
             hideProject(fetch_projects[2], hide_Fetch_three, show_Fetch_three, fetch_arrows[2]);
             //show_Fetch_three.classList.add("proj_title_hover");
         });
+        */
 
 //---------------- Frameworks projects --------------------------------
 let show_Frameworks_btn = getById("showFwsProjBtn");
@@ -874,7 +877,7 @@ show_Frameworks_btn.addEventListener('click', () => {
 hide_Frameworks_btn.addEventListener('click', () => {
     hideSection(proj_groups[3], hide_Frameworks_btn, show_Frameworks_btn, proj_groups_arrows[3]);
 });
-
+        /*
         //---------------- Frameworks 1 ---------------- //
         let show_Frameworks_one = getById("showFwOne");
         let hide_Frameworks_one = getById("hideFwOne");
@@ -890,6 +893,7 @@ hide_Frameworks_btn.addEventListener('click', () => {
             hideProject(fw_projects[0], hide_Frameworks_one, show_Frameworks_one, fw_arrows[0]);
             show_Frameworks_one.classList.add("proj_title_hover");
         });
+        */
 
 //---------------- SERVER projects --------------------------------
 let show_Server_btn = getById("showServerProjBtn");
