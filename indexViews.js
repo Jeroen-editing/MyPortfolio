@@ -15,7 +15,7 @@ let black = "#000000";
 let greenGradient = "linear-gradient(180deg, rgba(0,78,101,1) 0%, rgba(0,72,93,1) 12%, rgba(0,66,85,1) 24%, rgba(1,62,80,1) 36%, rgba(1,62,80,1) 64%, rgba(0,66,85,1) 76%, rgba(0,72,93,1) 88%, rgba(0,78,101,1) 100%)";
 let transparent = "transparent";
 
-let educations = ["web", "science", "film", "cad", "architect"];
+let educations = ["webOne", "webTwo", "science", "film", "cad", "architect"];
 let les_arrows = ["webArrow", "scienceArrow", "filmArrow", "cadArrow", "architectArrow"];
 let hide_les_arrows = ["webHideArrow", "scienceHideArrow", "filmHideArrow", "cadHideArrow", "architectHideArrow"];
 
@@ -279,6 +279,7 @@ switchArrowUp(hide_web_btn, hide_les_arrows[0]);
 show_web_btn.addEventListener('click', () => {
     closeEducations();    
     showSection(educations[0], hide_web_btn, show_web_btn, les_arrows[0]);
+    showSection(educations[1], hide_web_btn, show_web_btn, les_arrows[0]);
     /*
     hideSection(educations[1], hide_science_btn, show_science_btn, les_arrows[1]);
     hideSection(educations[2], hide_film_btn, show_film_btn, les_arrows[2]);
@@ -288,6 +289,7 @@ show_web_btn.addEventListener('click', () => {
 });
 hide_web_btn.addEventListener('click', () => {
     hideSection(educations[0], hide_web_btn, show_web_btn, les_arrows[0]);
+    hideSection(educations[1], hide_web_btn, show_web_btn, les_arrows[0]);
 });
 
 //---------------- computer science --------------------------------------
@@ -299,7 +301,7 @@ switchArrowUp(hide_science_btn, hide_les_arrows[1]);
 
 show_science_btn.addEventListener('click', () => {
     closeEducations(); 
-    showSection(educations[1], hide_science_btn, show_science_btn, les_arrows[1]);
+    showSection(educations[2], hide_science_btn, show_science_btn, les_arrows[1]);
     /*
     hideSection(educations[0], hide_web_btn, show_web_btn, les_arrows[0]);
     hideSection(educations[2], hide_film_btn, show_film_btn, les_arrows[2]);
@@ -308,7 +310,7 @@ show_science_btn.addEventListener('click', () => {
     */
 });
 hide_science_btn.addEventListener('click', () => {
-    hideSection(educations[1], hide_science_btn, show_science_btn, les_arrows[1]);
+    hideSection(educations[2], hide_science_btn, show_science_btn, les_arrows[1]);
 });
 
 //---------------- film and video-art --------------------------------------
@@ -320,7 +322,7 @@ switchArrowUp(hide_film_btn, hide_les_arrows[2]);
 
 show_film_btn.addEventListener('click', () => {
     closeEducations(); 
-    showSection(educations[2], hide_film_btn, show_film_btn, les_arrows[2]);
+    showSection(educations[3], hide_film_btn, show_film_btn, les_arrows[2]);
     /*
     hideSection(educations[0], hide_web_btn, show_web_btn, les_arrows[0]);
     hideSection(educations[1], hide_science_btn, show_science_btn, les_arrows[1]);
@@ -329,7 +331,7 @@ show_film_btn.addEventListener('click', () => {
     */
 });
 hide_film_btn.addEventListener('click', () => {
-    hideSection(educations[2], hide_film_btn, show_film_btn, les_arrows[2]);
+    hideSection(educations[3], hide_film_btn, show_film_btn, les_arrows[2]);
 });
 
 //---------------- auotcad -----------------------------------------------
@@ -341,7 +343,7 @@ switchArrowUp(hide_cad_btn, hide_les_arrows[3]);
 
 show_cad_btn.addEventListener('click', () => {
     closeEducations(); 
-    showSection(educations[3], hide_cad_btn, show_cad_btn, les_arrows[3]);
+    showSection(educations[4], hide_cad_btn, show_cad_btn, les_arrows[3]);
     /*
     hideSection(educations[0], hide_web_btn, show_web_btn, les_arrows[0]);
     hideSection(educations[1], hide_science_btn, show_science_btn, les_arrows[1]);
@@ -351,7 +353,7 @@ show_cad_btn.addEventListener('click', () => {
 });
 
 hide_cad_btn.addEventListener('click', () => {
-    hideSection(educations[3], hide_cad_btn, show_cad_btn, les_arrows[3]);
+    hideSection(educations[4], hide_cad_btn, show_cad_btn, les_arrows[3]);
 });
 
 //---------------- architecture - graphic art & design ------------------
@@ -363,7 +365,7 @@ switchArrowUp(hide_architect_btn, hide_les_arrows[4]);
 
 show_architect_btn.addEventListener('click', () => {
     closeEducations(); 
-    showSection(educations[4], hide_architect_btn, show_architect_btn, les_arrows[4]);
+    showSection(educations[5], hide_architect_btn, show_architect_btn, les_arrows[4]);
     /*
     hideSection(educations[0], hide_web_btn, show_web_btn, les_arrows[0]);
     hideSection(educations[1], hide_science_btn, show_science_btn, les_arrows[1]);
@@ -372,7 +374,7 @@ show_architect_btn.addEventListener('click', () => {
     */
 });
 hide_architect_btn.addEventListener('click', () => {
-    hideSection(educations[4], hide_architect_btn, show_architect_btn, les_arrows[4]);
+    hideSection(educations[5], hide_architect_btn, show_architect_btn, les_arrows[4]);
 });
 
 
@@ -484,7 +486,7 @@ const hideProject = (project, hide_proj, show_proj, arrow) => {
 
 const closeProjectGroups = () => {
     hideSection(proj_groups[0], hide_htmlCss_btn, show_htmlCss_btn, proj_groups_arrows[0]);
-    hideSection(proj_groups[1], hide_Js_btn, show_Js_btn, projects_arrows[1]);
+    hideSection(proj_groups[1], hide_Js_btn, show_Js_btn, proj_groups_arrows[1]);
     hideSection(proj_groups[2], hide_Fetch_btn, show_Fetch_btn, proj_groups_arrows[2]);
     hideSection(proj_groups[3], hide_Frameworks_btn, show_Frameworks_btn, proj_groups_arrows[3]);
     hideSection(proj_groups[4], hide_Server_btn, show_Server_btn, proj_groups_arrows[4]);

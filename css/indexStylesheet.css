@@ -994,13 +994,13 @@ body {
     align-content: flex-start;
     height: 2.3rem;
     margin: 0 auto;
-    padding: .1rem 0;
+    padding: .3rem 0;
     color: #550600;
     border: 1px solid transparent;
     z-index: 4; }
     .info_article .subtitle_box .sub_title {
       width: 60%;
-      margin: .4rem 0 .2rem 1.3rem;
+      margin: .4rem 0 .2rem 1rem;
       font-family: 'Macondo', cursive;
       font-size: 1.4rem;
       letter-spacing: .1rem; }
@@ -1186,10 +1186,36 @@ body {
       text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.66), -1px -1px 2px rgba(0, 0, 0, 0.66); }
     #educationsBox .subtitle_hover:hover .arrow {
       background: rgba(10, 62, 77, 0.46); }
+  #educationsBox #webOne {
+    border-bottom: none;
+    box-shadow: inset 1px 1px 2px rgba(20, 20, 20, 0.4), inset -1px 1px 2px rgba(20, 20, 20, 0.4); }
+  #educationsBox #webTwo {
+    border-top: none;
+    box-shadow: inset 1px -1px 2px rgba(20, 20, 20, 0.4), inset -1px -1px 2px rgba(20, 20, 20, 0.4); }
   #educationsBox .article_text {
     margin: 0 0;
-    padding: .4rem 0 .5rem 0;
-    border: none; }
+    padding: 1.2rem 0 1rem 0; }
+    #educationsBox .article_text .schoolTyoe_titleBox {
+      margin: 0 1rem;
+      padding: .6rem 1.4rem;
+      background: white;
+      border: 1px solid #0a3e4d;
+      border-bottom: none; }
+      #educationsBox .article_text .schoolTyoe_titleBox .schoolType_title {
+        font-family: 'Macondo', cursive;
+        font-size: 1.2rem;
+        letter-spacing: .1rem; }
+    #educationsBox .article_text .text_box {
+      margin: 0 1rem;
+      border: 1px solid #0a3e4d;
+      background: rgba(255, 255, 255, 0.8); }
+    #educationsBox .article_text .top_box {
+      border-bottom: none; }
+    #educationsBox .article_text .middle_box {
+      border-top: none;
+      border-bottom: none; }
+    #educationsBox .article_text .bot_box {
+      border-top: none; }
     #educationsBox .article_text .shool_header {
       display: flex;
       flex-direction: row;
@@ -1244,14 +1270,6 @@ body {
         background: linear-gradient(180deg, #004e65 0%, #00485d 12%, #004255 24%, #013e50 36%, #013e50 64%, #004255 76%, #00485d 88%, #004e65 100%);
         border: 1px solid #0a3e4d;
         box-shadow: inset 2px 2px 3px rgba(20, 20, 20, 0.4), inset -2px -2px 3px rgba(20, 20, 20, 0.4), inset 1px 1px 2px rgba(2, 2, 2, 0.6), inset -1px -1px 2px rgba(2, 2, 2, 0.6); }
-    #educationsBox .article_text .text_box {
-      margin: 0 1rem;
-      border: 1px solid rgba(9, 48, 48, 0.4);
-      background: rgba(255, 255, 255, 0.8); }
-    #educationsBox .article_text .top_box {
-      border-bottom: none; }
-    #educationsBox .article_text .bot_box {
-      border-top: none; }
   #educationsBox .hide_btn:hover {
     cursor: pointer;
     background: url(../assets/backgrounds/bg_03_green.jpg) no-repeat;
@@ -1477,7 +1495,10 @@ body {
   margin: 1rem; }
 
 .projects {
-  padding: .2rem 0 .8rem 0; }
+  padding: 1.2rem 0 1rem 0;
+  border-top: 1px solid #0a3e4d;
+  border-bottom: 1px solid #0a3e4d;
+  box-shadow: inset 1px 1px 2px rgba(20, 20, 20, 0.4), inset -2px -2px 2px rgba(20, 20, 20, 0.4); }
 
 .proj_article {
   max-width: 100%;
@@ -1548,18 +1569,17 @@ body {
     justify-content: space-between;
     align-items: center;
     align-content: center;
-    padding: .2rem;
     color: #0a3e4d;
     background: rgba(255, 255, 255, 0.6); }
     .proj_article .proj_title_box .proj_title {
       width: 100%;
-      margin: .2rem 1rem 0 1rem;
-      padding: .4rem 0 .6rem 0;
+      padding: .4rem .2rem .6rem 1rem;
       font-family: 'Port Lligat Sans', cursive;
       font-size: 1.5rem;
       font-weight: 600;
       letter-spacing: 2px;
-      border-bottom: 2px solid #0a3e4d; }
+      background: rgba(10, 62, 77, 0.28);
+      border-bottom: 1px solid #0a3e4d; }
       .proj_article .proj_title_box .proj_title span {
         font-size: .9rem;
         font-weight: 400; }
@@ -1601,7 +1621,7 @@ body {
         font-size: 1rem;
         font-weight: 500;
         letter-spacing: 1px;
-        border-bottom: 1px solid rgba(10, 62, 77, 0.2); }
+        border-bottom: 1px solid rgba(10, 62, 77, 0.1); }
       .proj_article .proj_text .proj_header .proj_link {
         width: 20%;
         height: 2rem;

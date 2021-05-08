@@ -1202,14 +1202,14 @@ body {
         align-content: flex-start;
         height: 2.3rem;
         margin: 0 auto;
-        padding: .1rem 0;
+        padding: .3rem 0;
         color: $darkred;
         border: 1px solid transparent;
         z-index: 4;
 
         .sub_title {
             width: 60%;
-            margin: .4rem 0 .2rem 1.3rem;
+            margin: .4rem 0 .2rem 1rem;
             font-family: 'Macondo', cursive;
             font-size: 1.4rem;
             letter-spacing: .1rem;
@@ -1454,11 +1454,48 @@ body {
             }
         }
     }
+    #webOne {
+        //border-top: 1px solid $darkgreen;
+        border-bottom: none;
+        box-shadow: inset 1px 1px 2px rgba(20, 20, 20, 0.4), inset -1px 1px 2px rgba(20, 20, 20, 0.4);
+    }
+    #webTwo {
+        //border-bottom: 1px solid $darkgreen;
+        border-top: none;
+        box-shadow: inset 1px -1px 2px rgba(20, 20, 20, 0.4), inset -1px -1px 2px rgba(20, 20, 20, 0.4);
+    }
     .article_text {
         margin: 0 0;
-        padding: .4rem 0 .5rem 0;
-        border: none;
+        padding: 1.2rem 0 1rem 0;
 
+        .schoolTyoe_titleBox {
+            margin: 0 1rem;
+            padding: .6rem 1.4rem;
+            background: white;
+            border: 1px solid $darkgreen;
+            border-bottom: none;
+
+            .schoolType_title {
+                font-family: 'Macondo', cursive;
+            font-size: 1.2rem;
+            letter-spacing: .1rem;
+            }
+        }
+        .text_box {
+            margin: 0 1rem;
+            border: 1px solid $darkgreen;
+            background: rgba(white, .8);
+        }
+        .top_box {
+            border-bottom: none;
+        }
+        .middle_box {
+            border-top: none;
+            border-bottom: none;
+        }
+        .bot_box {
+            border-top: none;
+        }
         .shool_header {
             display: flex;
             flex-direction: row;
@@ -1523,17 +1560,6 @@ body {
                 border: 1px solid $darkgreen;
                 @include squareShadowInset();
             }
-        }
-        .text_box {
-            margin: 0 1rem;
-            border: 1px solid rgba(#093030, .4);
-            background: rgba(white, .8);
-        }
-        .top_box {
-            border-bottom: none;
-        }
-        .bot_box {
-            border-top: none;
         }
     }
     .hide_btn {
@@ -1829,7 +1855,11 @@ body {
     margin: 1rem;
 }
 .projects {
-    padding: .2rem 0 .8rem 0;
+    padding: 1.2rem 0 1rem 0;
+    border-top: 1px solid $darkgreen;
+    border-bottom: 1px solid $darkgreen;
+    //@include squareShadowInset();
+    box-shadow: inset 1px 1px 2px rgba(20, 20, 20, 0.4), inset -2px -2px 2px rgba(20, 20, 20, 0.4);
 }
 .proj_article {
     max-width: 100%;
@@ -1845,7 +1875,7 @@ body {
         justify-content: space-between;
         align-items: center;
         align-content: center;
-        padding: .2rem;
+        //padding: .2rem;
         //color: white;
         color: $darkgreen;
         //text-shadow: 1px 1px 2px black, -1px -1px 2px black;
@@ -1857,13 +1887,18 @@ body {
     
         .proj_title {
             width: 100%;
-            margin: .2rem 1rem 0 1rem;
-            padding: .4rem 0 .6rem 0;
+            //margin: .2rem 1rem 0 1rem;
+            padding: .4rem .2rem .6rem 1rem;
+            //color: white;
             font-family: 'Port Lligat Sans', cursive;
             font-size: 1.5rem;
             font-weight: 600;
             letter-spacing: 2px;
-            border-bottom: 2px solid $darkgreen;
+            //text-shadow: 1px 1px 2px black, -1px -1px 2px black;
+            //background: url(../assets/backgrounds/bg_03_lightgreen2.jpg) no-repeat;
+            //background-size: cover;
+            background: rgba($darkgreen, .28);
+            border-bottom: 1px solid $darkgreen;
 
             span {
                 font-size: .9rem;
@@ -1940,7 +1975,7 @@ body {
                 font-size: 1rem;
                 font-weight: 500;
                 letter-spacing: 1px;
-                border-bottom: 1px solid rgba($darkgreen, .2);
+                border-bottom: 1px solid rgba($darkgreen, .1);
             }
             .proj_link {
                 width: 20%;
