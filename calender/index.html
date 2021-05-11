@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kalender</title>
+
+    <style>
+    	h1 {
+    		width: 200px;
+    		padding: 0 256px 6px 256px;
+    		margin: 12px auto 8px auto;
+    		color: seagreen;
+    		text-shadow: 1px 1px 1px gray;
+    		border: 3px solid gray;
+    		border-top: none;
+    	}
+        table {
+            padding: 5px 5px 0 5px;
+            margin: 0 auto 6px auto;
+            background: seagreen;
+            border: 2px solid darkolivegreen;
+            border-collapse: separate;
+            border-spacing: 5px;
+        }
+        .month {
+            height: 28px;
+            padding-left: 15px;
+            font-size: 20px;
+            text-align: left;
+            background: rgb(232, 184, 63);
+        }
+        th, td {
+            width: 77px;
+            padding: 6px 8px 4px 8px;
+            text-align: center;
+            background: white;
+        }
+        th {
+            border: 1px solid darkgoldenrod;
+        }
+        td {
+        	margin-bottom: 0px;
+            font-weight: 600;
+            border: 1px solid dimgray;
+        }
+        .restdag {
+            color: dimgray;
+            font-weight: 300;
+            background: rgb(187, 187, 187);
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <h1>Kalender 2021</h1>
+
+        <div class="year" id="fullyear">
+        
+        </div>
+        
+        
+
+
+
+
+    </main>
+
+    <script>
+
+
+        var maanden = [ "januari", "februari", "maart", "april", "mei", "juni", "juli", "augustus", "september", "oktober", "november", "december" ];
+        var weekDagen = [ "maandag", "dinsdag", "woensdag", "donderdag", "vrijdag", "zaterdag", "zondag" ];
+
+        var aantalDagenInDeMaand = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+
+        var m; //index for the months
+        var w; //index for the weekdays
+        var d; //index for total days in each month
+
+        var beginDag = 4;
+        // special loop to use all elements in an array, same as array.lenght
+
+        for (m in maanden) {
+
+
+            document.write("<table>");
+            document.write("<tr><th class='month' colspan='7'>" + maanden[m] + "</th></tr>");
+
+            document.write("<tr>");
+            for (w in weekDagen) {
+                document.write("<th>" + weekDagen[w] + "</th>");
+            }
+            document.write("</tr><tr>");
+
+            var dagTeller = 0; //index for counting days in a week
+
+            
+            for ((d = 1 - beginDag); d <= aantalDagenInDeMaand[m]; d++) {
+                if (d > 0) {
+
+                    document.write("<td>" + d + "</td>");
+
+                } else {
+
+                    let teller = m - 1;
+
+                    if (teller < 0) {
+                        teller += 12;
+                    }
+
+                    var restdag = aantalDagenInDeMaand[teller] - Math.abs(d);
+
+                    var toonRestdag = "<td class='restdag'>" + restdag + "</td>";
+
+                    document.write(toonRestdag);
+
+                } 
+
+                dagTeller = dagTeller + 1;
+
+                if (dagTeller == 7) {
+                    document.write("</tr><tr>")
+                    dagTeller = 0;
+                } 
+
+            }
+              
+            document.write("<tr>");
+
+            document.write("</table>");
+
+            beginDag = dagTeller;
+        }
+    
+    
+    </script>
+    
+</body>
+</html>
