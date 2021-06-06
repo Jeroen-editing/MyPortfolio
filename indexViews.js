@@ -264,10 +264,11 @@ const switchProjArrowUp = (btn, arrow) => {
 
 const closeEducations = () => {
     hideSection(educations[0], hide_web_btn, show_web_btn, les_arrows[0]);
-    hideSection(educations[1], hide_science_btn, show_science_btn, les_arrows[1]);
-    hideSection(educations[2], hide_film_btn, show_film_btn, les_arrows[2]);
-    hideSection(educations[3], hide_cad_btn, show_cad_btn, les_arrows[3]);
-    hideSection(educations[4], hide_architect_btn, show_architect_btn, les_arrows[4]);
+    hideSection(educations[1], hide_web_btn, show_web_btn, les_arrows[0]);
+    hideSection(educations[2], hide_science_btn, show_science_btn, les_arrows[1]);
+    hideSection(educations[3], hide_film_btn, show_film_btn, les_arrows[2]);
+    hideSection(educations[4], hide_cad_btn, show_cad_btn, les_arrows[3]);
+    hideSection(educations[5], hide_architect_btn, show_architect_btn, les_arrows[4]);
 }
 //---------------- web developer --------------------------------------
 let show_web_btn = getById("showWebBtn");
@@ -280,12 +281,6 @@ show_web_btn.addEventListener('click', () => {
     closeEducations();    
     showSection(educations[0], hide_web_btn, show_web_btn, les_arrows[0]);
     showSection(educations[1], hide_web_btn, show_web_btn, les_arrows[0]);
-    /*
-    hideSection(educations[1], hide_science_btn, show_science_btn, les_arrows[1]);
-    hideSection(educations[2], hide_film_btn, show_film_btn, les_arrows[2]);
-    hideSection(educations[3], hide_cad_btn, show_cad_btn, les_arrows[3]);
-    hideSection(educations[4], hide_architect_btn, show_architect_btn, les_arrows[4]);
-    */
 });
 hide_web_btn.addEventListener('click', () => {
     hideSection(educations[0], hide_web_btn, show_web_btn, les_arrows[0]);
@@ -302,12 +297,6 @@ switchArrowUp(hide_science_btn, hide_les_arrows[1]);
 show_science_btn.addEventListener('click', () => {
     closeEducations(); 
     showSection(educations[2], hide_science_btn, show_science_btn, les_arrows[1]);
-    /*
-    hideSection(educations[0], hide_web_btn, show_web_btn, les_arrows[0]);
-    hideSection(educations[2], hide_film_btn, show_film_btn, les_arrows[2]);
-    hideSection(educations[3], hide_cad_btn, show_cad_btn, les_arrows[3]);
-    hideSection(educations[4], hide_architect_btn, show_architect_btn, les_arrows[4]);
-    */
 });
 hide_science_btn.addEventListener('click', () => {
     hideSection(educations[2], hide_science_btn, show_science_btn, les_arrows[1]);
@@ -323,12 +312,6 @@ switchArrowUp(hide_film_btn, hide_les_arrows[2]);
 show_film_btn.addEventListener('click', () => {
     closeEducations(); 
     showSection(educations[3], hide_film_btn, show_film_btn, les_arrows[2]);
-    /*
-    hideSection(educations[0], hide_web_btn, show_web_btn, les_arrows[0]);
-    hideSection(educations[1], hide_science_btn, show_science_btn, les_arrows[1]);
-    hideSection(educations[3], hide_cad_btn, show_cad_btn, les_arrows[3]);
-    hideSection(educations[4], hide_architect_btn, show_architect_btn, les_arrows[4]);
-    */
 });
 hide_film_btn.addEventListener('click', () => {
     hideSection(educations[3], hide_film_btn, show_film_btn, les_arrows[2]);
@@ -344,12 +327,6 @@ switchArrowUp(hide_cad_btn, hide_les_arrows[3]);
 show_cad_btn.addEventListener('click', () => {
     closeEducations(); 
     showSection(educations[4], hide_cad_btn, show_cad_btn, les_arrows[3]);
-    /*
-    hideSection(educations[0], hide_web_btn, show_web_btn, les_arrows[0]);
-    hideSection(educations[1], hide_science_btn, show_science_btn, les_arrows[1]);
-    hideSection(educations[2], hide_film_btn, show_film_btn, les_arrows[2]);
-    hideSection(educations[4], hide_architect_btn, show_architect_btn, les_arrows[4]);
-    */
 });
 
 hide_cad_btn.addEventListener('click', () => {
@@ -366,12 +343,6 @@ switchArrowUp(hide_architect_btn, hide_les_arrows[4]);
 show_architect_btn.addEventListener('click', () => {
     closeEducations(); 
     showSection(educations[5], hide_architect_btn, show_architect_btn, les_arrows[4]);
-    /*
-    hideSection(educations[0], hide_web_btn, show_web_btn, les_arrows[0]);
-    hideSection(educations[1], hide_science_btn, show_science_btn, les_arrows[1]);
-    hideSection(educations[2], hide_film_btn, show_film_btn, les_arrows[2]);
-    hideSection(educations[3], hide_cad_btn, show_cad_btn, les_arrows[3]);
-    */
 });
 hide_architect_btn.addEventListener('click', () => {
     hideSection(educations[5], hide_architect_btn, show_architect_btn, les_arrows[4]);
@@ -504,14 +475,6 @@ switchArrowUp(hide_htmlCss_btn, hide_proj_groups_arrows[0]);
 show_htmlCss_btn.addEventListener('click', () => {
     closeProjectGroups();
     showSection(proj_groups[0], hide_htmlCss_btn, show_htmlCss_btn, proj_groups_arrows[0]);
-    /*
-    hideSection(proj_groups[1], hide_Js_btn, show_Js_btn, projects_arrows[1]);
-    hideSection(proj_groups[2], hide_Fetch_btn, show_Fetch_btn, proj_groups_arrows[2]);
-    hideSection(proj_groups[3], hide_Frameworks_btn, show_Frameworks_btn, proj_groups_arrows[3]);
-    hideSection(proj_groups[4], hide_Server_btn, show_Server_btn, proj_groups_arrows[4]);
-    hideSection(proj_groups[5], hide_Ruby_btn, show_Ruby_btn, proj_groups_arrows[5]);
-    hideSection(proj_groups[6], hide_Phyton_btn, show_Phyton_btn, proj_groups_arrows[6]);
-    */
 });
 hide_htmlCss_btn.addEventListener('click', () => {
     hideSection(proj_groups[0], hide_htmlCss_btn, show_htmlCss_btn, proj_groups_arrows[0]);
@@ -710,14 +673,6 @@ switchArrowUp(hide_Js_btn, hide_proj_groups_arrows[1]);
 show_Js_btn.addEventListener('click', () => {
     closeProjectGroups();
     showSection(proj_groups[1], hide_Js_btn, show_Js_btn, proj_groups_arrows[1]);
-    /*
-    hideSection(proj_groups[0], hide_htmlCss_btn, show_htmlCss_btn, proj_groups_arrows[0]);
-    hideSection(proj_groups[2], hide_Fetch_btn, show_Fetch_btn, proj_groups_arrows[2]);
-    hideSection(proj_groups[3], hide_Frameworks_btn, show_Frameworks_btn, proj_groups_arrows[3]);
-    hideSection(proj_groups[4], hide_Server_btn, show_Server_btn, proj_groups_arrows[4]);
-    hideSection(proj_groups[5], hide_Ruby_btn, show_Ruby_btn, proj_groups_arrows[5]);
-    hideSection(proj_groups[6], hide_Phyton_btn, show_Phyton_btn, proj_groups_arrows[6]);
-    */
 });
 
 hide_Js_btn.addEventListener('click', () => {
@@ -789,14 +744,6 @@ switchArrowUp(hide_Fetch_btn, hide_proj_groups_arrows[2]);
 show_Fetch_btn.addEventListener('click', () => {
     closeProjectGroups();
     showSection(proj_groups[2], hide_Fetch_btn, show_Fetch_btn, proj_groups_arrows[2]);
-    /*
-    hideSection(proj_groups[0], hide_htmlCss_btn, show_htmlCss_btn, proj_groups_arrows[0]);
-    hideSection(proj_groups[1], hide_Js_btn, show_Js_btn, projects_arrows[1]);
-    hideSection(proj_groups[3], hide_Frameworks_btn, show_Frameworks_btn, proj_groups_arrows[3]);
-    hideSection(proj_groups[4], hide_Server_btn, show_Server_btn, proj_groups_arrows[4]);
-    hideSection(proj_groups[5], hide_Ruby_btn, show_Ruby_btn, proj_groups_arrows[5]);
-    hideSection(proj_groups[6], hide_Phyton_btn, show_Phyton_btn, proj_groups_arrows[6]);
-    */
 });
 hide_Fetch_btn.addEventListener('click', () => {
     hideSection(proj_groups[2], hide_Fetch_btn, show_Fetch_btn, proj_groups_arrows[2]);
@@ -867,14 +814,6 @@ switchArrowUp(hide_Frameworks_btn, hide_proj_groups_arrows[3]);
 show_Frameworks_btn.addEventListener('click', () => {
     closeProjectGroups();
     showSection(proj_groups[3], hide_Frameworks_btn, show_Frameworks_btn, proj_groups_arrows[3]);
-    /*
-    hideSection(proj_groups[0], hide_htmlCss_btn, show_htmlCss_btn, proj_groups_arrows[0]);
-    hideSection(proj_groups[1], hide_Js_btn, show_Js_btn, projects_arrows[1]);
-    hideSection(proj_groups[2], hide_Fetch_btn, show_Fetch_btn, proj_groups_arrows[2]);
-    hideSection(proj_groups[4], hide_Server_btn, show_Server_btn, proj_groups_arrows[4]);
-    hideSection(proj_groups[5], hide_Ruby_btn, show_Ruby_btn, proj_groups_arrows[5]);
-    hideSection(proj_groups[6], hide_Phyton_btn, show_Phyton_btn, proj_groups_arrows[6]);
-    */
 });
 hide_Frameworks_btn.addEventListener('click', () => {
     hideSection(proj_groups[3], hide_Frameworks_btn, show_Frameworks_btn, proj_groups_arrows[3]);
@@ -907,14 +846,6 @@ switchArrowUp(hide_Server_btn, hide_proj_groups_arrows[4]);
 show_Server_btn.addEventListener('click', () => {
     closeProjectGroups();
     showSection(proj_groups[4], hide_Server_btn, show_Server_btn, proj_groups_arrows[4]);
-    /*
-    hideSection(proj_groups[0], hide_htmlCss_btn, show_htmlCss_btn, proj_groups_arrows[0]);
-    hideSection(proj_groups[1], hide_Js_btn, show_Js_btn, projects_arrows[1]);
-    hideSection(proj_groups[2], hide_Fetch_btn, show_Fetch_btn, proj_groups_arrows[2]);
-    hideSection(proj_groups[3], hide_Frameworks_btn, show_Frameworks_btn, proj_groups_arrows[3]);
-    hideSection(proj_groups[5], hide_Ruby_btn, show_Ruby_btn, proj_groups_arrows[5]);
-    hideSection(proj_groups[6], hide_Phyton_btn, show_Phyton_btn, proj_groups_arrows[6]);
-    */
 });
 hide_Server_btn.addEventListener('click', () => {
     hideSection(proj_groups[4], hide_Server_btn, show_Server_btn, proj_groups_arrows[4]);
@@ -943,14 +874,6 @@ switchArrowUp(hide_Ruby_btn, hide_proj_groups_arrows[5]);
 show_Ruby_btn.addEventListener('click', () => {
     closeProjectGroups();
     showSection(proj_groups[5], hide_Ruby_btn, show_Ruby_btn, proj_groups_arrows[5]);
-    /*
-    hideSection(proj_groups[0], hide_htmlCss_btn, show_htmlCss_btn, proj_groups_arrows[0]);
-    hideSection(proj_groups[1], hide_Js_btn, show_Js_btn, projects_arrows[1]);
-    hideSection(proj_groups[2], hide_Fetch_btn, show_Fetch_btn, proj_groups_arrows[2]);
-    hideSection(proj_groups[3], hide_Frameworks_btn, show_Frameworks_btn, proj_groups_arrows[3]);
-    hideSection(proj_groups[4], hide_Server_btn, show_Server_btn, proj_groups_arrows[4]);
-    hideSection(proj_groups[6], hide_Phyton_btn, show_Phyton_btn, proj_groups_arrows[6]);
-    */
 });
 hide_Ruby_btn.addEventListener('click', () => {
     hideSection(proj_groups[5], hide_Ruby_btn, show_Ruby_btn, proj_groups_arrows[5]);
@@ -979,14 +902,6 @@ switchArrowUp(hide_Phyton_btn, hide_proj_groups_arrows[6]);
 show_Phyton_btn.addEventListener('click', () => {
     closeProjectGroups();
     showSection(proj_groups[6], hide_Phyton_btn, show_Phyton_btn, proj_groups_arrows[6]);
-    /*
-    hideSection(proj_groups[0], hide_htmlCss_btn, show_htmlCss_btn, proj_groups_arrows[0]);
-    hideSection(proj_groups[1], hide_Js_btn, show_Js_btn, projects_arrows[1]);
-    hideSection(proj_groups[2], hide_Fetch_btn, show_Fetch_btn, proj_groups_arrows[2]);
-    hideSection(proj_groups[3], hide_Frameworks_btn, show_Frameworks_btn, proj_groups_arrows[3]);
-    hideSection(proj_groups[4], hide_Server_btn, show_Server_btn, proj_groups_arrows[4]);
-    hideSection(proj_groups[5], hide_Ruby_btn, show_Ruby_btn, proj_groups_arrows[5]);
-    */
 });
 hide_Phyton_btn.addEventListener('click', () => {
     hideSection(proj_groups[6], hide_Phyton_btn, show_Phyton_btn, proj_groups_arrows[6]);
